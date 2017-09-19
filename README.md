@@ -15,4 +15,4 @@ This directory contains the following files, which are mostly ignored on the `ma
 ## Source
 
 The manuscripts in this directory were built from
-[`b65dacf784bd620979cf686b834eab71df3c14da`](https://github.com/dhimmel/bitcoin-whitepaper/commit/b65dacf784bd620979cf686b834eab71df3c14da).
+[`1699061a218f9ceb3fb0a858447d5f0fc8f36341`](https://github.com/dhimmel/bitcoin-whitepaper/commit/1699061a218f9ceb3fb0a858447d5f0fc8f36341).
