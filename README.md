@@ -1,6 +1,6 @@
 # Output directory containing the formatted manuscript
 
-The [`gh-pages`](https://github.com/greenelab/manubot-rootstock/tree/gh-pages) branch hosts the contents of this directory at https://greenelab.github.io/manubot-rootstock/.
+The [`gh-pages`](https://github.com/dhimmel/bitcoin-whitepaper/tree/gh-pages) branch hosts the contents of this directory at https://dhimmel.github.io/bitcoin-whitepaper/.
 
 ## Files
 
@@ -15,4 +15,4 @@ This directory contains the following files, which are mostly ignored on the `ma
 ## Source
 
 The manuscripts in this directory were built from
-[`b5644db59904b5563a79376e51765adf113a02cb`](https://github.com/greenelab/manubot-rootstock/commit/b5644db59904b5563a79376e51765adf113a02cb).
+[`b65dacf784bd620979cf686b834eab71df3c14da`](https://github.com/dhimmel/bitcoin-whitepaper/commit/b65dacf784bd620979cf686b834eab71df3c14da).
