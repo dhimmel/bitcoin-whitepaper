@@ -11,12 +11,15 @@ title: 'Bitcoin: A Peer-to-Peer Electronic Cash System'
 
 
 
+This page contains a [Manubot](https://github.com/greenelab/manubot-rootstock) reproduction of the [Bitcoin Whitepaper](https://bitcoin.org/bitcoin.pdf) based on [the version](http://nakamotoinstitute.org/bitcoin/) provided by the _Satoshi Nakamoto Institute_.
+This whitepaper was originally published by Satoshi Nakamoto on October 31, 2008.
+
 
  
 
 <small><em>
 This manuscript was automatically generated
-from [dhimmel/bitcoin-whitepaper@c490575](https://github.com/dhimmel/bitcoin-whitepaper/tree/c4905757ef4f19ce21f4d98019106446b305c9e0)
+from [dhimmel/bitcoin-whitepaper@39e9024](https://github.com/dhimmel/bitcoin-whitepaper/tree/39e9024b121d309d8367a5d4efef258b6709733c)
 on September 19, 2017.
 </em></small>
 
