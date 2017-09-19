@@ -2,9 +2,9 @@
 
 <!-- usage note: edit the H1 title above to personalize the manuscript -->
 
-[![HTML Manuscript](https://img.shields.io/badge/manuscript-HTML-blue.svg)](https://greenelab.github.io/manubot-rootstock/)
-[![PDF Manuscript](https://img.shields.io/badge/manuscript-PDF-blue.svg)](https://greenelab.github.io/manubot-rootstock/manuscript.pdf)
-[![Build Status](https://travis-ci.org/greenelab/manubot-rootstock.svg?branch=master)](https://travis-ci.org/greenelab/manubot-rootstock)
+[![HTML Manuscript](https://img.shields.io/badge/manuscript-HTML-blue.svg)](https://dhimmel.github.io/bitcoin-whitepaper/)
+[![PDF Manuscript](https://img.shields.io/badge/manuscript-PDF-blue.svg)](https://dhimmel.github.io/bitcoin-whitepaper/manuscript.pdf)
+[![Build Status](https://travis-ci.org/dhimmel/bitcoin-whitepaper.svg?branch=master)](https://travis-ci.org/dhimmel/bitcoin-whitepaper)
 
 ## Manuscript description
 
@@ -58,17 +58,17 @@ python -m http.server
 
 ### Continuous Integration
 
-[![Build Status](https://travis-ci.org/greenelab/manubot-rootstock.svg?branch=master)](https://travis-ci.org/greenelab/manubot-rootstock)
+[![Build Status](https://travis-ci.org/dhimmel/bitcoin-whitepaper.svg?branch=master)](https://travis-ci.org/dhimmel/bitcoin-whitepaper)
 
 Whenever a pull request is opened, Travis CI will test whether the changes break the build process to generate a formatted manuscript.
 The build process aims to detect common errors, such as invalid citations.
 If your pull request build fails, see the Travis CI logs for the cause of failure and revise your pull request accordingly.
 
-When a commit to the `master` branch occurs (for example, when a pull request is merged), Travis CI builds the manuscript and writes the results to the [`gh-pages`](https://github.com/greenelab/manubot-rootstock/tree/gh-pages) and [`output`](https://github.com/greenelab/manubot-rootstock/tree/output) branches.
+When a commit to the `master` branch occurs (for example, when a pull request is merged), Travis CI builds the manuscript and writes the results to the [`gh-pages`](https://github.com/dhimmel/bitcoin-whitepaper/tree/gh-pages) and [`output`](https://github.com/dhimmel/bitcoin-whitepaper/tree/output) branches.
 The `gh-pages` branch uses [GitHub Pages](https://pages.github.com/) to host the following URLs:
 
-+ **HTML manuscript** at https://greenelab.github.io/manubot-rootstock/
-+ **PDF manuscript** at https://greenelab.github.io/manubot-rootstock/manuscript.pdf
++ **HTML manuscript** at https://dhimmel.github.io/bitcoin-whitepaper/
++ **PDF manuscript** at https://dhimmel.github.io/bitcoin-whitepaper/manuscript.pdf
 
 For continuous integration configuration details, see [`.travis.yml`](.travis.yml).
 
@@ -83,7 +83,7 @@ We encourage users to openly license their manuscripts, which is the default as 
 [![License: CC0 1.0](https://img.shields.io/badge/License%20Parts-CC0%201.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 
 This entirety of this repository is licensed under a CC BY 4.0 License ([`LICENSE.md`](LICENSE.md)), which allows reuse with attribution.
-Please attribute by linking to https://github.com/greenelab/manubot-rootstock.
+Please attribute by linking to https://github.com/dhimmel/bitcoin-whitepaper.
 
 Since CC BY is not ideal for code and data, certain repository components are also released under the CC0 1.0 public domain dedication ([`LICENSE-CC0.md`](LICENSE-CC0.md)).
 All files matched by the following glob patterns are dual licensed under CC BY 4.0 and CC0 1.0:
@@ -103,4 +103,4 @@ All other files are only available under CC BY 4.0, including:
 + `*.pdf`
 + `*.docx`
 
-Please open [an issue](https://github.com/greenelab/manubot-rootstock/issues) for any question related to licensing.
+Please open [an issue](https://github.com/dhimmel/bitcoin-whitepaper/issues) for any question related to licensing.
