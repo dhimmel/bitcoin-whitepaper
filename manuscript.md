@@ -16,7 +16,7 @@ title: 'Bitcoin: A Peer-to-Peer Electronic Cash System'
 
 <small><em>
 This manuscript was automatically generated
-from [dhimmel/bitcoin-whitepaper@04c5607](https://github.com/dhimmel/bitcoin-whitepaper/tree/04c5607577313afd7c4cf9fb2f3ee996d1f0cb8b)
+from [dhimmel/bitcoin-whitepaper@781b667](https://github.com/dhimmel/bitcoin-whitepaper/tree/781b6676d34443cfda40e32ef63217b79ee81c40)
 on September 19, 2017.
 </em></small>
 
