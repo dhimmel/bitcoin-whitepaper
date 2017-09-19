@@ -8,10 +8,14 @@
 
 ## Manuscript description
 
-<!-- usage note: edit this section. -->
+<!-- usage note: edit this section.
 
 This repository is a template manuscript (a.k.a. rootstock).
 Actual manuscript instances will clone this repository (see [`SETUP.md`](SETUP.md)) and replace this paragraph with a description of their manuscript.
+-->
+
+This repository uses the Manubot to recreate the [Bitcoin whitepaper](https://bitcoin.org/bitcoin.pdf).
+The source was derived from the [HTML whitepaper version](http://nakamotoinstitute.org/bitcoin/) provided by the _Satoshi Nakamoto Institute_.
 
 ## Manubot
 
