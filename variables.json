@@ -2,27 +2,14 @@
   "date": "September 19, 2017",
   "authors": [
     {
-      "github": "johndoe",
-      "name": "John Doe",
-      "initials": "JD",
-      "orcid": "XXXX-XXXX-XXXX-XXXX",
-      "twitter": "johndoe",
-      "email": "john.doe@something.com",
-      "affiliations": "Department of Something, University of Whatever",
-      "funders": "Grant XXXXXXXX"
-    },
-    {
-      "github": "janeroe",
-      "name": "Jane Roe",
-      "initials": "JR",
-      "orcid": "XXXX-XXXX-XXXX-XXXX",
-      "email": "jane.roe@whatever.edu",
-      "affiliations": "Department of Whatever, University of Something"
+      "name": "Satoshi Nakamoto",
+      "initials": "SN",
+      "email": "satoshin@gmx.com"
     }
   ],
   "ci_source": {
     "repo_slug": "dhimmel/bitcoin-whitepaper",
-    "commit": "b65dacf784bd620979cf686b834eab71df3c14da"
+    "commit": "1699061a218f9ceb3fb0a858447d5f0fc8f36341"
   },
   "manuscript_stats": {
     "reference_counts": {
