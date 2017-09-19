@@ -16,7 +16,7 @@ title: 'Bitcoin: A Peer-to-Peer Electronic Cash System'
 
 <small><em>
 This manuscript was automatically generated
-from [dhimmel/bitcoin-whitepaper@f0ad86b](https://github.com/dhimmel/bitcoin-whitepaper/tree/f0ad86b7a24f5d50ecfba00fd47d5623b84dda9d)
+from [dhimmel/bitcoin-whitepaper@c490575](https://github.com/dhimmel/bitcoin-whitepaper/tree/c4905757ef4f19ce21f4d98019106446b305c9e0)
 on September 19, 2017.
 </em></small>
 
@@ -75,13 +75,13 @@ We need a way for the payee to know that the previous owners did not sign any ea
 For our purposes, the earliest transaction is the one that counts, so we don't care about later attempts to double-spend.
 The only way to confirm the absence of a transaction is to be aware of all transactions.
 In the mint based model, the mint was aware of all transactions and decided which arrived first.
-To accomplish this without a trusted party, transactions must be publicly announced[[1]][2], and we need a system for participants to agree on a single history of the order in which they were received.
+To accomplish this without a trusted party, transactions must be publicly announced [@PBY14TLl], and we need a system for participants to agree on a single history of the order in which they were received.
 The payee needs proof that at the time of each transaction, the majority of nodes agreed it was the first received.
 
 ## 3. Timestamp Server
 
 The solution we propose begins with a timestamp server.
-A timestamp server works by taking a hash of a block of items to be timestamped and widely publishing the hash, such as in a newspaper or Usenet post[[2-5]][3].
+A timestamp server works by taking a hash of a block of items to be timestamped and widely publishing the hash, such as in a newspaper or Usenet post [@17Cp5JvP8; @zk5okH1t; @1Gw6LBfXO; @10yGvxo1W].
 The timestamp proves that the data must have existed at the time, obviously, in order to get into the hash.
 Each timestamp includes the previous timestamp in its hash, forming a chain, with each additional timestamp reinforcing the ones before it.
 
@@ -89,7 +89,7 @@ Each timestamp includes the previous timestamp in its hash, forming a chain, wit
 
 ## 4. Proof-of-Work
 
-To implement a distributed timestamp server on a peer-to-peer basis, we will need to use a proof-of-work system similar to Adam Back's Hashcash[[6]][5], rather than newspaper or Usenet posts.
+To implement a distributed timestamp server on a peer-to-peer basis, we will need to use a proof-of-work system similar to Adam Back's Hashcash [@zILHkANE], rather than newspaper or Usenet posts.
 The proof-of-work involves scanning for a value that when hashed, such as with SHA-256, the hash begins with a number of zero bits.
 The average work required is exponential in the number of zero bits required and can be verified by executing a single hash.
 
@@ -149,7 +149,7 @@ He ought to find it more profitable to play by the rules, such rules that favour
 ## 7. Reclaiming Disk Space
 
 Once the latest transaction in a coin is buried under enough blocks, the spent transactions before it can be discarded to save disk space.
-To facilitate this without breaking the block's hash, transactions are hashed in a Merkle Tree [[7]][7][[2]][3][[5]][8], with only the root included in the block's hash.
+To facilitate this without breaking the block's hash, transactions are hashed in a Merkle Tree [@1E30OhQ6H; @17Cp5JvP8; @10yGvxo1W], with only the root included in the block's hash.
 Old blocks can then be compacted by stubbing off branches of the tree.
 The interior hashes do not need to be stored.
 
@@ -208,7 +208,7 @@ The success event is the honest chain being extended by one block, increasing it
 
 The probability of an attacker catching up from a given deficit is analogous to a Gambler's Ruin problem.
 Suppose a gambler with unlimited credit starts at a deficit and plays potentially an infinite number of trials to try to reach breakeven.
-We can calculate the probability he ever reaches breakeven, or that an attacker ever catches up with the honest chain, as follows[[8]][13]:
+We can calculate the probability he ever reaches breakeven, or that an attacker ever catches up with the honest chain, as follows [@dPawqJne]:
 
 $$
 \begin{eqnarray*}

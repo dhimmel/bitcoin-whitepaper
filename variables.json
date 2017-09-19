@@ -9,12 +9,14 @@
   ],
   "ci_source": {
     "repo_slug": "dhimmel/bitcoin-whitepaper",
-    "commit": "f0ad86b7a24f5d50ecfba00fd47d5623b84dda9d"
+    "commit": "c4905757ef4f19ce21f4d98019106446b305c9e0"
   },
   "manuscript_stats": {
     "reference_counts": {
-      "total": 0
+      "doi": 4,
+      "url": 4,
+      "total": 8
     },
-    "word_count": 3452
+    "word_count": 3461
   }
 }
