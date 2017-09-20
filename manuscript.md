@@ -1,7 +1,7 @@
 ---
 author-meta:
 - Satoshi Nakamoto
-date-meta: '2017-09-19'
+date-meta: '2017-09-20'
 keywords:
 - bitcoin
 - whitepaper
@@ -19,8 +19,8 @@ This whitepaper was originally published by Satoshi Nakamoto on October 31, 2008
 
 <small><em>
 This manuscript was automatically generated
-from [dhimmel/bitcoin-whitepaper@39e9024](https://github.com/dhimmel/bitcoin-whitepaper/tree/39e9024b121d309d8367a5d4efef258b6709733c)
-on September 19, 2017.
+from [dhimmel/bitcoin-whitepaper@23f7262](https://github.com/dhimmel/bitcoin-whitepaper/tree/23f72627ca5808651022758912f63eda0c153501)
+on September 20, 2017.
 </em></small>
 
 ## Authors
