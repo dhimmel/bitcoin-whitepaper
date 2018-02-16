@@ -1,7 +1,7 @@
 ---
 author-meta:
 - Satoshi Nakamoto
-date-meta: '2017-09-20'
+date-meta: '2018-02-16'
 keywords:
 - bitcoin
 - whitepaper
@@ -15,12 +15,13 @@ This page contains a [Manubot](https://github.com/greenelab/manubot-rootstock) r
 This whitepaper was originally published by Satoshi Nakamoto on October 31, 2008.
 
 
- 
+
 
 <small><em>
 This manuscript was automatically generated
-from [dhimmel/bitcoin-whitepaper@23f7262](https://github.com/dhimmel/bitcoin-whitepaper/tree/23f72627ca5808651022758912f63eda0c153501)
-on September 20, 2017.
+from [dhimmel/bitcoin-whitepaper@1b8d3fd](https://github.com/dhimmel/bitcoin-whitepaper/tree/1b8d3fd7bb160bd1cda378937541eaf649743429)
+on February 16, 2018.
+The permalink for this manuscript version is <https://dhimmel.github.io/bitcoin-whitepaper/v/1b8d3fd7bb160bd1cda378937541eaf649743429/>.
 </em></small>
 
 ## Authors
