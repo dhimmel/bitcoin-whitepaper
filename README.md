@@ -28,6 +28,8 @@ Manubot automates citations and references, versions manuscripts using git, and 
 The [Manubot Rootstock repository](https://git.io/vQSvo) is a general purpose template for creating new Manubot instances, as detailed in [`SETUP.md`](SETUP.md).
 See [`USAGE.md`](USAGE.md) for documentation how to write a manuscript.
 
+Please open [an issue](https://github.com/greenelab/manubot-rootstock/issues) for questions related to Manubot usage, bug reports, or general inquiries.
+
 ### Repository directories & files
 
 The directories are as follows:
@@ -47,8 +49,8 @@ To run the Manubot locally, install the [conda](https://conda.io) environment as
 Then, you can build the manuscript on POSIX systems by running the following commands.
 
 ```sh
-# Activate the manubot conda environment
-source activate manubot
+# Activate the manubot conda environment (assumes conda version >= 4.4)
+conda activate manubot
 
 # Build the manuscript
 sh build/build.sh
@@ -56,6 +58,12 @@ sh build/build.sh
 # Or monitor the content directory, and automatically rebuild the manuscript
 # when a change is detected.
 sh build/autobuild.sh
+
+# At this point, the HTML & PDF outputs will have been created. The remaining
+# commands are for serving the webpage to view the HTML manuscript locally.
+
+# Configure the webpage directory
+python build/webpage.py
 
 # View the manuscript locally at http://localhost:8000/
 cd webpage
@@ -88,7 +96,7 @@ We encourage users to openly license their manuscripts, which is the default as 
 [![License: CC BY 4.0](https://img.shields.io/badge/License%20All-CC%20BY%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by/4.0/)
 [![License: CC0 1.0](https://img.shields.io/badge/License%20Parts-CC0%201.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 
-This entirety of this repository is licensed under a CC BY 4.0 License ([`LICENSE.md`](LICENSE.md)), which allows reuse with attribution.
+Except when noted otherwise, the entirety of this repository is licensed under a CC BY 4.0 License ([`LICENSE.md`](LICENSE.md)), which allows reuse with attribution.
 Please attribute by linking to https://github.com/dhimmel/bitcoin-whitepaper.
 
 Since CC BY is not ideal for code and data, certain repository components are also released under the CC0 1.0 public domain dedication ([`LICENSE-CC0.md`](LICENSE-CC0.md)).
@@ -108,5 +116,9 @@ All other files are only available under CC BY 4.0, including:
 + `*.html`
 + `*.pdf`
 + `*.docx`
+
+Except for the following files with different licenses:
+
++ `build/assets/anchors.js` which is [released](https://www.bryanbraun.com/anchorjs/) under an [MIT License](https://opensource.org/licenses/MIT)
 
 Please open [an issue](https://github.com/dhimmel/bitcoin-whitepaper/issues) for any question related to licensing.
