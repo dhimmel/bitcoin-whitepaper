@@ -5,7 +5,7 @@
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Satoshi Nakamoto" />
-  <meta name="dcterms.date" content="2018-02-16" />
+  <meta name="dcterms.date" content="2018-10-31" />
   <meta name="keywords" content="bitcoin, whitepaper, cryptocurrency" />
   <title>Bitcoin: A Peer-to-Peer Electronic Cash System</title>
   <style type="text/css">
@@ -17,7 +17,7 @@
   <style type="text/css">
 a.sourceLine { display: inline-block; line-height: 1.25; }
 a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; position: absolute; }
+a.sourceLine:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode { white-space: pre; position: relative; }
 div.sourceCode { margin: 1em 0; }
@@ -30,13 +30,11 @@ code.sourceCode { white-space: pre-wrap; }
 a.sourceLine { text-indent: -1em; padding-left: 1em; }
 }
 pre.numberSource a.sourceLine
-  { position: relative; }
-pre.numberSource a.sourceLine:empty
-  { position: absolute; }
+  { position: relative; left: -4em; }
 pre.numberSource a.sourceLine::before
   { content: attr(data-line-number);
-    position: absolute; left: -5em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all;
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
@@ -79,7 +77,7 @@ code span.va { color: #19177c; } /* Variable */
 code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="github-pandoc.css">
+  <link rel="stylesheet" href="github-pandoc.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
@@ -90,11 +88,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <!-- End Analytics Script -->
 </head>
 <body>
-<header>
+<header id="title-block-header">
 <h1 class="title">Bitcoin: A Peer-to-Peer Electronic Cash System</h1>
 </header>
 <p>This page contains a <a href="https://github.com/greenelab/manubot-rootstock">Manubot</a> reproduction of the <a href="https://bitcoin.org/bitcoin.pdf">Bitcoin Whitepaper</a> based on <a href="http://nakamotoinstitute.org/bitcoin/">the version</a> provided by the <em>Satoshi Nakamoto Institute</em>. This whitepaper was originally published by Satoshi Nakamoto on October 31, 2008.</p>
-<p><small><em> This manuscript was automatically generated from <a href="https://github.com/dhimmel/bitcoin-whitepaper/tree/1b8d3fd7bb160bd1cda378937541eaf649743429">dhimmel/bitcoin-whitepaper@1b8d3fd</a> on February 16, 2018. The permalink for this manuscript version is <a href="https://dhimmel.github.io/bitcoin-whitepaper/v/1b8d3fd7bb160bd1cda378937541eaf649743429/" class="uri">https://dhimmel.github.io/bitcoin-whitepaper/v/1b8d3fd7bb160bd1cda378937541eaf649743429/</a>. </em></small></p>
+<p><small><em> This manuscript (<a href="https://dhimmel.github.io/bitcoin-whitepaper/v/628a9a29ec8e503dd785a79041043fbc5ddf794b/">permalink</a>) was automatically generated from <a href="https://github.com/dhimmel/bitcoin-whitepaper/tree/628a9a29ec8e503dd785a79041043fbc5ddf794b">dhimmel/bitcoin-whitepaper@628a9a2</a> on October 31, 2018. </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
 <li><strong>Satoshi Nakamoto</strong><br><br> <small> </small></li>
@@ -112,7 +110,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>The problem of course is the payee can’t verify that one of the owners did not double-spend the coin. A common solution is to introduce a trusted central authority, or mint, that checks every transaction for double spending. After each transaction, the coin must be returned to the mint to issue a new coin, and only coins issued directly from the mint are trusted not to be double-spent. The problem with this solution is that the fate of the entire money system depends on the company running the mint, with every transaction having to go through them, just like a bank.</p>
 <p>We need a way for the payee to know that the previous owners did not sign any earlier transactions. For our purposes, the earliest transaction is the one that counts, so we don’t care about later attempts to double-spend. The only way to confirm the absence of a transaction is to be aware of all transactions. In the mint based model, the mint was aware of all transactions and decided which arrived first. To accomplish this without a trusted party, transactions must be publicly announced <span class="citation" data-cites="PBY14TLl">[<a href="#ref-PBY14TLl">1</a>]</span>, and we need a system for participants to agree on a single history of the order in which they were received. The payee needs proof that at the time of each transaction, the majority of nodes agreed it was the first received.</p>
 <h2 id="timestamp-server">3. Timestamp Server</h2>
-<p>The solution we propose begins with a timestamp server. A timestamp server works by taking a hash of a block of items to be timestamped and widely publishing the hash, such as in a newspaper or Usenet post <span class="citation" data-cites="17Cp5JvP8 zk5okH1t 1Gw6LBfXO 10yGvxo1W">[<a href="#ref-17Cp5JvP8">2</a>–<a href="#ref-10yGvxo1W">5</a>]</span>. The timestamp proves that the data must have existed at the time, obviously, in order to get into the hash. Each timestamp includes the previous timestamp in its hash, forming a chain, with each additional timestamp reinforcing the ones before it.</p>
+<p>The solution we propose begins with a timestamp server. A timestamp server works by taking a hash of a block of items to be timestamped and widely publishing the hash, such as in a newspaper or Usenet post <span class="citation" data-cites="17Cp5JvP8 zk5okH1t 1Gw6LBfXO 10yGvxo1W">[<a href="#ref-17Cp5JvP8">2</a>,<a href="#ref-zk5okH1t">3</a>,<a href="#ref-1Gw6LBfXO">4</a>,<a href="#ref-10yGvxo1W">5</a>]</span>. The timestamp proves that the data must have existed at the time, obviously, in order to get into the hash. Each timestamp includes the previous timestamp in its hash, forming a chain, with each additional timestamp reinforcing the ones before it.</p>
 <figure>
 <img src="images/timestamp-server.svg" />
 </figure>
@@ -262,42 +260,46 @@ q=0.45   z=340</code></pre>
 <div id="ref-PBY14TLl">
 <p>1. <strong>b-money</strong><br />
 Dai Wei<br />
-(1998-11-01) <a href="http://www.weidai.com/bmoney.txt" class="uri">http://www.weidai.com/bmoney.txt</a></p>
+(1998-11-01) <a href="http://www.weidai.com/bmoney.txt">http://www.weidai.com/bmoney.txt</a></p>
 </div>
 <div id="ref-17Cp5JvP8">
 <p>2. <strong>Design of a secure timestamping service with minimal trust requirements</strong><br />
 Henri Massias, Xavier Serret-Avila, Jean-Jacques Quisquater<br />
-<em>20th Symposium on Information Theory in the Benelux</em> (1999-05) <a href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.13.6228" class="uri">http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.13.6228</a></p>
+<em>20th Symposium on Information Theory in the Benelux</em> (1999-05) <a href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.13.6228">http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.13.6228</a></p>
 </div>
 <div id="ref-zk5okH1t">
 <p>3. <strong>How to time-stamp a digital document</strong><br />
 Stuart Haber, W.Scott Stornetta<br />
-<em>Journal of Cryptology</em> (1991) <a href="https://doi.org/10.1007/bf00196791" class="uri">https://doi.org/10.1007/bf00196791</a></p>
+<em>Journal of Cryptology</em> (1991) <a href="https://doi.org/cwwxd4">https://doi.org/cwwxd4</a><br />
+DOI: <a href="https://doi.org/10.1007/bf00196791">10.1007/bf00196791</a></p>
 </div>
 <div id="ref-1Gw6LBfXO">
 <p>4. <strong>Improving the Efficiency and Reliability of Digital Time-Stamping</strong><br />
 Dave Bayer, Stuart Haber, W. Scott Stornetta<br />
-<em>Sequences II</em> (1993) <a href="https://doi.org/10.1007/978-1-4613-9323-8_24" class="uri">https://doi.org/10.1007/978-1-4613-9323-8_24</a></p>
+<em>Sequences II</em> (1993) <a href="https://doi.org/bn4rpx">https://doi.org/bn4rpx</a><br />
+DOI: <a href="https://doi.org/10.1007/978-1-4613-9323-8_24">10.1007/978-1-4613-9323-8_24</a></p>
 </div>
 <div id="ref-10yGvxo1W">
 <p>5. <strong>Secure names for bit-strings</strong><br />
 Stuart Haber, W. Scott Stornetta<br />
-<em>Proceedings of the 4th ACM conference on Computer and communications security - CCS ’97</em> (1997) <a href="https://doi.org/10.1145/266420.266430" class="uri">https://doi.org/10.1145/266420.266430</a></p>
+<em>Proceedings of the 4th ACM conference on Computer and communications security - CCS ’97</em> (1997) <a href="https://doi.org/dtnrf6">https://doi.org/dtnrf6</a><br />
+DOI: <a href="https://doi.org/10.1145/266420.266430">10.1145/266420.266430</a></p>
 </div>
 <div id="ref-zILHkANE">
 <p>6. <strong>Hashcash - A Denial of Service Counter-Measure</strong><br />
 Adam Back<br />
-(2002-08-01) <a href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.15.8" class="uri">http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.15.8</a></p>
+(2002-08-01) <a href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.15.8">http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.15.8</a></p>
 </div>
 <div id="ref-1E30OhQ6H">
 <p>7. <strong>Protocols for Public Key Cryptosystems</strong><br />
 Ralph C. Merkle<br />
-<em>1980 IEEE Symposium on Security and Privacy</em> (1980-04) <a href="https://doi.org/10.1109/sp.1980.10006" class="uri">https://doi.org/10.1109/sp.1980.10006</a></p>
+<em>1980 IEEE Symposium on Security and Privacy</em> (1980-04) <a href="https://doi.org/bmvbd6">https://doi.org/bmvbd6</a><br />
+DOI: <a href="https://doi.org/10.1109/sp.1980.10006">10.1109/sp.1980.10006</a></p>
 </div>
 <div id="ref-dPawqJne">
 <p>8. <strong>An Introduction to Probability Theory and its Applications</strong><br />
 William Feller<br />
-<em>John Wiley &amp; Sons</em> (1957) <a href="https://archive.org/details/AnIntroductionToProbabilityTheoryAndItsApplicationsVolume1" class="uri">https://archive.org/details/AnIntroductionToProbabilityTheoryAndItsApplicationsVolume1</a></p>
+<em>John Wiley &amp; Sons</em> (1957) <a href="https://archive.org/details/AnIntroductionToProbabilityTheoryAndItsApplicationsVolume1">https://archive.org/details/AnIntroductionToProbabilityTheoryAndItsApplicationsVolume1</a></p>
 </div>
 </div>
 <script>

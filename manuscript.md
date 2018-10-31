@@ -1,7 +1,7 @@
 ---
 author-meta:
 - Satoshi Nakamoto
-date-meta: '2018-02-16'
+date-meta: '2018-10-31'
 keywords:
 - bitcoin
 - whitepaper
@@ -18,10 +18,11 @@ This whitepaper was originally published by Satoshi Nakamoto on October 31, 2008
 
 
 <small><em>
-This manuscript was automatically generated
-from [dhimmel/bitcoin-whitepaper@1b8d3fd](https://github.com/dhimmel/bitcoin-whitepaper/tree/1b8d3fd7bb160bd1cda378937541eaf649743429)
-on February 16, 2018.
-The permalink for this manuscript version is <https://dhimmel.github.io/bitcoin-whitepaper/v/1b8d3fd7bb160bd1cda378937541eaf649743429/>.
+This manuscript
+([permalink](https://dhimmel.github.io/bitcoin-whitepaper/v/628a9a29ec8e503dd785a79041043fbc5ddf794b/))
+was automatically generated
+from [dhimmel/bitcoin-whitepaper@628a9a2](https://github.com/dhimmel/bitcoin-whitepaper/tree/628a9a29ec8e503dd785a79041043fbc5ddf794b)
+on October 31, 2018.
 </em></small>
 
 ## Authors
