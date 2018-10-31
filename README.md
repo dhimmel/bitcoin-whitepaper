@@ -1,7 +1,7 @@
 # Output directory containing the formatted manuscript
 
 The [`gh-pages`](https://github.com/dhimmel/bitcoin-whitepaper/tree/gh-pages) branch hosts the contents of this directory at https://dhimmel.github.io/bitcoin-whitepaper/.
-The permalink for this webpage version is https://dhimmel.github.io/bitcoin-whitepaper/v/628a9a29ec8e503dd785a79041043fbc5ddf794b/.
+The permalink for this webpage version is https://dhimmel.github.io/bitcoin-whitepaper/v/ebfce2b530b141764275093eee8f424b18144420/.
 To redirect to the permalink for the latest manuscript version at anytime, use the link https://dhimmel.github.io/bitcoin-whitepaper/v/freeze/.
 
 ## Files
@@ -32,4 +32,4 @@ git add v/*/*.ots
 ## Source
 
 The manuscripts in this directory were built from
-[`628a9a29ec8e503dd785a79041043fbc5ddf794b`](https://github.com/dhimmel/bitcoin-whitepaper/commit/628a9a29ec8e503dd785a79041043fbc5ddf794b).
+[`ebfce2b530b141764275093eee8f424b18144420`](https://github.com/dhimmel/bitcoin-whitepaper/commit/ebfce2b530b141764275093eee8f424b18144420).
