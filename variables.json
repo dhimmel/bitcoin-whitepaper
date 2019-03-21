@@ -1,5 +1,5 @@
 {
-  "date": "October 31, 2018",
+  "date": "March 21, 2019",
   "authors": [
     {
       "name": "Satoshi Nakamoto",
@@ -11,7 +11,7 @@
     "repo_slug": "dhimmel/bitcoin-whitepaper",
     "repo_owner": "dhimmel",
     "repo_name": "bitcoin-whitepaper",
-    "commit": "ebfce2b530b141764275093eee8f424b18144420"
+    "commit": "cb1f2c12eec8b56db9ef5f641ec805e2d449d319"
   },
   "manuscript_stats": {
     "reference_counts": {
@@ -19,6 +19,6 @@
       "url": 4,
       "total": 8
     },
-    "word_count": 3509
+    "word_count": 3525
   }
 }
