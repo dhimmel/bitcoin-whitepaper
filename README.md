@@ -25,10 +25,10 @@ This project began as a live demo in a 2017-09-19 [Greene Lab](http://www.greene
 
 Manubot is a system for writing scholarly manuscripts via GitHub.
 Manubot automates citations and references, versions manuscripts using git, and enables collaborative writing via GitHub.
-The [Manubot Rootstock repository](https://git.io/vQSvo) is a general purpose template for creating new Manubot instances, as detailed in [`SETUP.md`](SETUP.md).
+The [rootstock repository](https://git.io/fhQH1) is a general purpose template for creating new Manubot instances, as detailed in [`SETUP.md`](SETUP.md).
 See [`USAGE.md`](USAGE.md) for documentation how to write a manuscript.
 
-Please open [an issue](https://github.com/greenelab/manubot-rootstock/issues) for questions related to Manubot usage, bug reports, or general inquiries.
+Please open [an issue](https://git.io/fhQHM) for questions related to Manubot usage, bug reports, or general inquiries.
 
 ### Repository directories & files
 
@@ -119,9 +119,5 @@ All other files are only available under CC BY 4.0, including:
 + `*.html`
 + `*.pdf`
 + `*.docx`
-
-Except for the following files with different licenses:
-
-+ `build/assets/anchors.js` which is [released](https://www.bryanbraun.com/anchorjs/) under an [MIT License](https://opensource.org/licenses/MIT)
 
 Please open [an issue](https://github.com/dhimmel/bitcoin-whitepaper/issues) for any question related to licensing.
