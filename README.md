@@ -2,8 +2,8 @@
 
 <!-- usage note: edit the H1 title above to personalize the manuscript -->
 
-[![HTML Manuscript](https://img.shields.io/badge/manuscript-HTML-blue.svg)](https://dhimmel.github.io/bitcoin-whitepaper/)
-[![PDF Manuscript](https://img.shields.io/badge/manuscript-PDF-blue.svg)](https://dhimmel.github.io/bitcoin-whitepaper/manuscript.pdf)
+[![HTML Manuscript](https://img.shields.io/badge/manuscript-HTML-blue.svg)](https://git.dhimmel.com/bitcoin-whitepaper/)
+[![PDF Manuscript](https://img.shields.io/badge/manuscript-PDF-blue.svg)](https://git.dhimmel.com/bitcoin-whitepaper/manuscript.pdf)
 [![Build Status](https://travis-ci.org/dhimmel/bitcoin-whitepaper.svg?branch=master)](https://travis-ci.org/dhimmel/bitcoin-whitepaper)
 
 ## Manuscript description
