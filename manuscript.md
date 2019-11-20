@@ -46,15 +46,19 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dhimmel.github.io/bitcoin-whitepaper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dhimmel.github.io/bitcoin-whitepaper/v/fd3d8fd229b5b77b3f6dfdff2a5ac914e3296e2d/" />
+  <link rel="alternate" type="text/html" href="https://dhimmel.github.io/bitcoin-whitepaper/v/b905f582a6d6a7f39f025102f62f60b4925aed0e/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dhimmel.github.io/bitcoin-whitepaper/v/fd3d8fd229b5b77b3f6dfdff2a5ac914e3296e2d/" />
+  <meta name="manubot_html_url_versioned" content="https://dhimmel.github.io/bitcoin-whitepaper/v/b905f582a6d6a7f39f025102f62f60b4925aed0e/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dhimmel.github.io/bitcoin-whitepaper/v/fd3d8fd229b5b77b3f6dfdff2a5ac914e3296e2d/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dhimmel.github.io/bitcoin-whitepaper/v/b905f582a6d6a7f39f025102f62f60b4925aed0e/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
   <meta property="twitter:card" content="summary_large_image" />
+
+  <meta property="og:image" content="https://github.com/dhimmel/bitcoin-whitepaper/raw/b905f582a6d6a7f39f025102f62f60b4925aed0e/build/assets/thumbnail.png" />
+
+  <meta property="twitter:image" content="https://github.com/dhimmel/bitcoin-whitepaper/raw/b905f582a6d6a7f39f025102f62f60b4925aed0e/build/assets/thumbnail.png" />
 
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
 
@@ -80,9 +84,9 @@ This whitepaper was originally published by Satoshi Nakamoto on October 31, 2008
 
 <small><em>
 This manuscript
-([permalink](https://dhimmel.github.io/bitcoin-whitepaper/v/fd3d8fd229b5b77b3f6dfdff2a5ac914e3296e2d/))
+([permalink](https://dhimmel.github.io/bitcoin-whitepaper/v/b905f582a6d6a7f39f025102f62f60b4925aed0e/))
 was automatically generated
-from [dhimmel/bitcoin-whitepaper@fd3d8fd](https://github.com/dhimmel/bitcoin-whitepaper/tree/fd3d8fd229b5b77b3f6dfdff2a5ac914e3296e2d)
+from [dhimmel/bitcoin-whitepaper@b905f58](https://github.com/dhimmel/bitcoin-whitepaper/tree/b905f582a6d6a7f39f025102f62f60b4925aed0e)
 on .
 </em></small>
 
