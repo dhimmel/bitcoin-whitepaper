@@ -46,19 +46,19 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://git.dhimmel.com/bitcoin-whitepaper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://git.dhimmel.com/bitcoin-whitepaper/v/7ea0c402a009517e156f859cdfbb07a091940c33/" />
+  <link rel="alternate" type="text/html" href="https://git.dhimmel.com/bitcoin-whitepaper/v/a5f36b332cb6a5fa9e701886f376ac1ac2946d07/" />
 
-  <meta name="manubot_html_url_versioned" content="https://git.dhimmel.com/bitcoin-whitepaper/v/7ea0c402a009517e156f859cdfbb07a091940c33/" />
+  <meta name="manubot_html_url_versioned" content="https://git.dhimmel.com/bitcoin-whitepaper/v/a5f36b332cb6a5fa9e701886f376ac1ac2946d07/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://git.dhimmel.com/bitcoin-whitepaper/v/7ea0c402a009517e156f859cdfbb07a091940c33/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://git.dhimmel.com/bitcoin-whitepaper/v/a5f36b332cb6a5fa9e701886f376ac1ac2946d07/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
   <meta property="twitter:card" content="summary_large_image" />
 
-  <meta property="og:image" content="https://github.com/dhimmel/bitcoin-whitepaper/raw/7ea0c402a009517e156f859cdfbb07a091940c33/build/assets/thumbnail.png" />
+  <meta property="og:image" content="https://github.com/dhimmel/bitcoin-whitepaper/raw/a5f36b332cb6a5fa9e701886f376ac1ac2946d07/build/assets/thumbnail.png" />
 
-  <meta property="twitter:image" content="https://github.com/dhimmel/bitcoin-whitepaper/raw/7ea0c402a009517e156f859cdfbb07a091940c33/build/assets/thumbnail.png" />
+  <meta property="twitter:image" content="https://github.com/dhimmel/bitcoin-whitepaper/raw/a5f36b332cb6a5fa9e701886f376ac1ac2946d07/build/assets/thumbnail.png" />
 
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
 
@@ -84,10 +84,10 @@ This whitepaper was originally published by Satoshi Nakamoto on October 31, 2008
 
 <small><em>
 This manuscript
-([permalink](https://git.dhimmel.com/bitcoin-whitepaper/v/7ea0c402a009517e156f859cdfbb07a091940c33/))
+([permalink](https://git.dhimmel.com/bitcoin-whitepaper/v/a5f36b332cb6a5fa9e701886f376ac1ac2946d07/))
 was automatically generated
-from [dhimmel/bitcoin-whitepaper@7ea0c40](https://github.com/dhimmel/bitcoin-whitepaper/tree/7ea0c402a009517e156f859cdfbb07a091940c33)
-on .
+from [dhimmel/bitcoin-whitepaper@a5f36b3](https://github.com/dhimmel/bitcoin-whitepaper/tree/a5f36b332cb6a5fa9e701886f376ac1ac2946d07)
+on November 20, 2019.
 </em></small>
 
 ## Authors
