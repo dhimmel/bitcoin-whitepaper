@@ -46,19 +46,19 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://git.dhimmel.com/bitcoin-whitepaper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://git.dhimmel.com/bitcoin-whitepaper/v/613f2bf50275f990caf2c1d8ec3d49c91654051c/" />
+  <link rel="alternate" type="text/html" href="https://git.dhimmel.com/bitcoin-whitepaper/v/7ea0c402a009517e156f859cdfbb07a091940c33/" />
 
-  <meta name="manubot_html_url_versioned" content="https://git.dhimmel.com/bitcoin-whitepaper/v/613f2bf50275f990caf2c1d8ec3d49c91654051c/" />
+  <meta name="manubot_html_url_versioned" content="https://git.dhimmel.com/bitcoin-whitepaper/v/7ea0c402a009517e156f859cdfbb07a091940c33/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://git.dhimmel.com/bitcoin-whitepaper/v/613f2bf50275f990caf2c1d8ec3d49c91654051c/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://git.dhimmel.com/bitcoin-whitepaper/v/7ea0c402a009517e156f859cdfbb07a091940c33/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
   <meta property="twitter:card" content="summary_large_image" />
 
-  <meta property="og:image" content="https://github.com/dhimmel/bitcoin-whitepaper/raw/613f2bf50275f990caf2c1d8ec3d49c91654051c/build/assets/thumbnail.png" />
+  <meta property="og:image" content="https://github.com/dhimmel/bitcoin-whitepaper/raw/7ea0c402a009517e156f859cdfbb07a091940c33/build/assets/thumbnail.png" />
 
-  <meta property="twitter:image" content="https://github.com/dhimmel/bitcoin-whitepaper/raw/613f2bf50275f990caf2c1d8ec3d49c91654051c/build/assets/thumbnail.png" />
+  <meta property="twitter:image" content="https://github.com/dhimmel/bitcoin-whitepaper/raw/7ea0c402a009517e156f859cdfbb07a091940c33/build/assets/thumbnail.png" />
 
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
 
@@ -76,7 +76,7 @@ title: 'Bitcoin: A Peer-to-Peer Electronic Cash System'
 
 
 
-This page contains a [Manubot](https://manubot.org) reproduction of the [Bitcoin Whitepaper](https://bitcoin.org/bitcoin.pdf) based on [the version](http://nakamotoinstitute.org/bitcoin/) provided by the _Satoshi Nakamoto Institute_.
+This page contains a [Manubot](https://manubot.org) reproduction of the [Bitcoin Whitepaper](https://bitcoin.org/bitcoin.pdf) based on [the version](https://nakamotoinstitute.org/bitcoin/) provided by the _Satoshi Nakamoto Institute_.
 This whitepaper was originally published by Satoshi Nakamoto on October 31, 2008.
 
 
@@ -84,9 +84,9 @@ This whitepaper was originally published by Satoshi Nakamoto on October 31, 2008
 
 <small><em>
 This manuscript
-([permalink](https://git.dhimmel.com/bitcoin-whitepaper/v/613f2bf50275f990caf2c1d8ec3d49c91654051c/))
+([permalink](https://git.dhimmel.com/bitcoin-whitepaper/v/7ea0c402a009517e156f859cdfbb07a091940c33/))
 was automatically generated
-from [dhimmel/bitcoin-whitepaper@613f2bf](https://github.com/dhimmel/bitcoin-whitepaper/tree/613f2bf50275f990caf2c1d8ec3d49c91654051c)
+from [dhimmel/bitcoin-whitepaper@7ea0c40](https://github.com/dhimmel/bitcoin-whitepaper/tree/7ea0c402a009517e156f859cdfbb07a091940c33)
 on .
 </em></small>
 
