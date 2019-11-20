@@ -1,7 +1,68 @@
 ---
 author-meta:
 - Satoshi Nakamoto
-date-meta: '2019-03-21'
+date-meta: '2019-11-20'
+header-includes: '<!--
+
+  Manubot generated metadata rendered from header-includes-template.html.
+
+  Suggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html
+
+  -->
+
+  <meta name="dc.format" content="text/html" />
+
+  <meta name="dc.title" content="Bitcoin: A Peer-to-Peer Electronic Cash System" />
+
+  <meta name="citation_title" content="Bitcoin: A Peer-to-Peer Electronic Cash System" />
+
+  <meta property="og:title" content="Bitcoin: A Peer-to-Peer Electronic Cash System" />
+
+  <meta property="twitter:title" content="Bitcoin: A Peer-to-Peer Electronic Cash System" />
+
+  <meta name="dc.date" content="2019-11-20" />
+
+  <meta name="citation_publication_date" content="2019-11-20" />
+
+  <meta name="dc.relation.ispartof" content="Manubot" />
+
+  <meta name="dc.publisher" content="Manubot" />
+
+  <meta name="citation_journal_title" content="Manubot" />
+
+  <meta name="citation_technical_report_institution" content="Manubot" />
+
+  <meta name="citation_author" content="Satoshi Nakamoto" />
+
+  <link rel="canonical" href="https://dhimmel.github.io/bitcoin-whitepaper/" />
+
+  <meta property="og:url" content="https://dhimmel.github.io/bitcoin-whitepaper/" />
+
+  <meta property="twitter:url" content="https://dhimmel.github.io/bitcoin-whitepaper/" />
+
+  <meta name="citation_fulltext_html_url" content="https://dhimmel.github.io/bitcoin-whitepaper/" />
+
+  <meta name="citation_pdf_url" content="https://dhimmel.github.io/bitcoin-whitepaper/manuscript.pdf" />
+
+  <link rel="alternate" type="application/pdf" href="https://dhimmel.github.io/bitcoin-whitepaper/manuscript.pdf" />
+
+  <link rel="alternate" type="text/html" href="https://dhimmel.github.io/bitcoin-whitepaper/v/fd3d8fd229b5b77b3f6dfdff2a5ac914e3296e2d/" />
+
+  <meta name="manubot_html_url_versioned" content="https://dhimmel.github.io/bitcoin-whitepaper/v/fd3d8fd229b5b77b3f6dfdff2a5ac914e3296e2d/" />
+
+  <meta name="manubot_pdf_url_versioned" content="https://dhimmel.github.io/bitcoin-whitepaper/v/fd3d8fd229b5b77b3f6dfdff2a5ac914e3296e2d/manuscript.pdf" />
+
+  <meta property="og:type" content="article" />
+
+  <meta property="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
+
+  <link rel="mask-icon" href="https://manubot.org/safari-pinned-tab.svg" color="#ad1457" />
+
+  <meta name="theme-color" content="#ad1457" />
+
+  <!-- end Manubot generated metadata -->'
 keywords:
 - bitcoin
 - whitepaper
@@ -19,10 +80,10 @@ This whitepaper was originally published by Satoshi Nakamoto on October 31, 2008
 
 <small><em>
 This manuscript
-([permalink](https://dhimmel.github.io/bitcoin-whitepaper/v/cb1f2c12eec8b56db9ef5f641ec805e2d449d319/))
+([permalink](https://dhimmel.github.io/bitcoin-whitepaper/v/fd3d8fd229b5b77b3f6dfdff2a5ac914e3296e2d/))
 was automatically generated
-from [dhimmel/bitcoin-whitepaper@cb1f2c1](https://github.com/dhimmel/bitcoin-whitepaper/tree/cb1f2c12eec8b56db9ef5f641ec805e2d449d319)
-on March 21, 2019.
+from [dhimmel/bitcoin-whitepaper@fd3d8fd](https://github.com/dhimmel/bitcoin-whitepaper/tree/fd3d8fd229b5b77b3f6dfdff2a5ac914e3296e2d)
+on .
 </em></small>
 
 ## Authors

@@ -5,7 +5,7 @@
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Satoshi Nakamoto" />
-  <meta name="dcterms.date" content="2019-03-21" />
+  <meta name="dcterms.date" content="2019-11-20" />
   <meta name="keywords" content="bitcoin, whitepaper, cryptocurrency" />
   <title>Bitcoin: A Peer-to-Peer Electronic Cash System</title>
   <style>
@@ -15,9 +15,9 @@
       div.column{display: inline-block; vertical-align: top; width: 50%;}
   </style>
   <style>
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode { white-space: pre; position: relative; }
 div.sourceCode { margin: 1em 0; }
@@ -27,14 +27,16 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(title);
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
+    border: none; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
@@ -43,9 +45,9 @@ pre.numberSource a.sourceLine::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {  }
+  {   }
 @media screen {
-a.sourceLine::before { text-decoration: underline; }
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
@@ -80,13 +82,42 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
+  <!--
+  Manubot generated metadata rendered from header-includes-template.html.
+  Suggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html
+  -->
+  <meta name="dc.format" content="text/html" />
+  <meta name="dc.title" content="Bitcoin: A Peer-to-Peer Electronic Cash System" />
+  <meta name="citation_title" content="Bitcoin: A Peer-to-Peer Electronic Cash System" />
+  <meta property="og:title" content="Bitcoin: A Peer-to-Peer Electronic Cash System" />
+  <meta property="twitter:title" content="Bitcoin: A Peer-to-Peer Electronic Cash System" />
+  <meta name="dc.date" content="2019-11-20" />
+  <meta name="citation_publication_date" content="2019-11-20" />
+  <meta name="dc.relation.ispartof" content="Manubot" />
+  <meta name="dc.publisher" content="Manubot" />
+  <meta name="citation_journal_title" content="Manubot" />
+  <meta name="citation_technical_report_institution" content="Manubot" />
+  <meta name="citation_author" content="Satoshi Nakamoto" />
+  <link rel="canonical" href="https://dhimmel.github.io/bitcoin-whitepaper/" />
+  <meta property="og:url" content="https://dhimmel.github.io/bitcoin-whitepaper/" />
+  <meta property="twitter:url" content="https://dhimmel.github.io/bitcoin-whitepaper/" />
+  <meta name="citation_fulltext_html_url" content="https://dhimmel.github.io/bitcoin-whitepaper/" />
+  <meta name="citation_pdf_url" content="https://dhimmel.github.io/bitcoin-whitepaper/manuscript.pdf" />
+  <link rel="alternate" type="application/pdf" href="https://dhimmel.github.io/bitcoin-whitepaper/manuscript.pdf" /> <link rel="alternate" type="text/html" href="https://dhimmel.github.io/bitcoin-whitepaper/v/fd3d8fd229b5b77b3f6dfdff2a5ac914e3296e2d/" />
+  <meta name="manubot_html_url_versioned" content="https://dhimmel.github.io/bitcoin-whitepaper/v/fd3d8fd229b5b77b3f6dfdff2a5ac914e3296e2d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://dhimmel.github.io/bitcoin-whitepaper/v/fd3d8fd229b5b77b3f6dfdff2a5ac914e3296e2d/manuscript.pdf" />
+  <meta property="og:type" content="article" />
+  <meta property="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" /> <link rel="mask-icon" href="https://manubot.org/safari-pinned-tab.svg" color="#ad1457" />
+  <meta name="theme-color" content="#ad1457" />
+  <!-- end Manubot generated metadata -->
 </head>
 <body>
 <header id="title-block-header">
 <h1 class="title">Bitcoin: A Peer-to-Peer Electronic Cash System</h1>
 </header>
 <p>This page contains a <a href="https://manubot.org">Manubot</a> reproduction of the <a href="https://bitcoin.org/bitcoin.pdf">Bitcoin Whitepaper</a> based on <a href="http://nakamotoinstitute.org/bitcoin/">the version</a> provided by the <em>Satoshi Nakamoto Institute</em>. This whitepaper was originally published by Satoshi Nakamoto on October 31, 2008.</p>
-<p><small><em> This manuscript (<a href="https://dhimmel.github.io/bitcoin-whitepaper/v/cb1f2c12eec8b56db9ef5f641ec805e2d449d319/">permalink</a>) was automatically generated from <a href="https://github.com/dhimmel/bitcoin-whitepaper/tree/cb1f2c12eec8b56db9ef5f641ec805e2d449d319">dhimmel/bitcoin-whitepaper@cb1f2c1</a> on March 21, 2019. </em></small></p>
+<p><small><em> This manuscript (<a href="https://dhimmel.github.io/bitcoin-whitepaper/v/fd3d8fd229b5b77b3f6dfdff2a5ac914e3296e2d/">permalink</a>) was automatically generated from <a href="https://github.com/dhimmel/bitcoin-whitepaper/tree/fd3d8fd229b5b77b3f6dfdff2a5ac914e3296e2d">dhimmel/bitcoin-whitepaper@fd3d8fd</a> on . </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
 <li><strong>Satoshi Nakamoto</strong><br><br> <small> </small></li>
@@ -99,20 +130,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2 id="transactions">2. Transactions</h2>
 <p>We define an electronic coin as a chain of digital signatures. Each owner transfers the coin to the next by digitally signing a hash of the previous transaction and the public key of the next owner and adding these to the end of the coin. A payee can verify the signatures to verify the chain of ownership.</p>
 <figure>
-<img src="images/transactions.svg" />
+<img src="images/transactions.svg" alt="" />
 </figure>
 <p>The problem of course is the payee can’t verify that one of the owners did not double-spend the coin. A common solution is to introduce a trusted central authority, or mint, that checks every transaction for double spending. After each transaction, the coin must be returned to the mint to issue a new coin, and only coins issued directly from the mint are trusted not to be double-spent. The problem with this solution is that the fate of the entire money system depends on the company running the mint, with every transaction having to go through them, just like a bank.</p>
-<p>We need a way for the payee to know that the previous owners did not sign any earlier transactions. For our purposes, the earliest transaction is the one that counts, so we don’t care about later attempts to double-spend. The only way to confirm the absence of a transaction is to be aware of all transactions. In the mint based model, the mint was aware of all transactions and decided which arrived first. To accomplish this without a trusted party, transactions must be publicly announced <span class="citation" data-cites="PBY14TLl">[<a href="#ref-PBY14TLl">1</a>]</span>, and we need a system for participants to agree on a single history of the order in which they were received. The payee needs proof that at the time of each transaction, the majority of nodes agreed it was the first received.</p>
+<p>We need a way for the payee to know that the previous owners did not sign any earlier transactions. For our purposes, the earliest transaction is the one that counts, so we don’t care about later attempts to double-spend. The only way to confirm the absence of a transaction is to be aware of all transactions. In the mint based model, the mint was aware of all transactions and decided which arrived first. To accomplish this without a trusted party, transactions must be publicly announced <span class="citation" data-cites="PBY14TLl">[<a href="#ref-PBY14TLl" role="doc-biblioref">1</a>]</span>, and we need a system for participants to agree on a single history of the order in which they were received. The payee needs proof that at the time of each transaction, the majority of nodes agreed it was the first received.</p>
 <h2 id="timestamp-server">3. Timestamp Server</h2>
-<p>The solution we propose begins with a timestamp server. A timestamp server works by taking a hash of a block of items to be timestamped and widely publishing the hash, such as in a newspaper or Usenet post <span class="citation" data-cites="17Cp5JvP8 zk5okH1t 1Gw6LBfXO 10yGvxo1W">[<a href="#ref-17Cp5JvP8">2</a>,<a href="#ref-zk5okH1t">3</a>,<a href="#ref-1Gw6LBfXO">4</a>,<a href="#ref-10yGvxo1W">5</a>]</span>. The timestamp proves that the data must have existed at the time, obviously, in order to get into the hash. Each timestamp includes the previous timestamp in its hash, forming a chain, with each additional timestamp reinforcing the ones before it.</p>
+<p>The solution we propose begins with a timestamp server. A timestamp server works by taking a hash of a block of items to be timestamped and widely publishing the hash, such as in a newspaper or Usenet post <span class="citation" data-cites="17Cp5JvP8 zk5okH1t 1Gw6LBfXO 10yGvxo1W">[<a href="#ref-17Cp5JvP8" role="doc-biblioref">2</a>,<a href="#ref-zk5okH1t" role="doc-biblioref">3</a>,<a href="#ref-1Gw6LBfXO" role="doc-biblioref">4</a>,<a href="#ref-10yGvxo1W" role="doc-biblioref">5</a>]</span>. The timestamp proves that the data must have existed at the time, obviously, in order to get into the hash. Each timestamp includes the previous timestamp in its hash, forming a chain, with each additional timestamp reinforcing the ones before it.</p>
 <figure>
-<img src="images/timestamp-server.svg" />
+<img src="images/timestamp-server.svg" alt="" />
 </figure>
 <h2 id="proof-of-work">4. Proof-of-Work</h2>
-<p>To implement a distributed timestamp server on a peer-to-peer basis, we will need to use a proof-of-work system similar to Adam Back’s Hashcash <span class="citation" data-cites="zILHkANE">[<a href="#ref-zILHkANE">6</a>]</span>, rather than newspaper or Usenet posts. The proof-of-work involves scanning for a value that when hashed, such as with SHA-256, the hash begins with a number of zero bits. The average work required is exponential in the number of zero bits required and can be verified by executing a single hash.</p>
+<p>To implement a distributed timestamp server on a peer-to-peer basis, we will need to use a proof-of-work system similar to Adam Back’s Hashcash <span class="citation" data-cites="zILHkANE">[<a href="#ref-zILHkANE" role="doc-biblioref">6</a>]</span>, rather than newspaper or Usenet posts. The proof-of-work involves scanning for a value that when hashed, such as with SHA-256, the hash begins with a number of zero bits. The average work required is exponential in the number of zero bits required and can be verified by executing a single hash.</p>
 <p>For our timestamp network, we implement the proof-of-work by incrementing a nonce in the block until a value is found that gives the block’s hash the required zero bits. Once the CPU effort has been expended to make it satisfy the proof-of-work, the block cannot be changed without redoing the work. As later blocks are chained after it, the work to change the block would include redoing all the blocks after it.</p>
 <figure>
-<img src="images/proof-of-work.svg" />
+<img src="images/proof-of-work.svg" alt="" />
 </figure>
 <p>The proof-of-work also solves the problem of determining representation in majority decision making. If the majority were based on one-IP-address-one-vote, it could be subverted by anyone able to allocate many IPs. Proof-of-work is essentially one-CPU-one-vote. The majority decision is represented by the longest chain, which has the greatest proof-of-work effort invested in it. If a majority of CPU power is controlled by honest nodes, the honest chain will grow the fastest and outpace any competing chains. To modify a past block, an attacker would have to redo the proof-of-work of the block and all blocks after it and then catch up with and surpass the work of the honest nodes. We will show later that the probability of a slower attacker catching up diminishes exponentially as subsequent blocks are added.</p>
 <p>To compensate for increasing hardware speed and varying interest in running nodes over time, the proof-of-work difficulty is determined by a moving average targeting an average number of blocks per hour. If they’re generated too fast, the difficulty increases.</p>
@@ -133,33 +164,33 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>The incentive can also be funded with transaction fees. If the output value of a transaction is less than its input value, the difference is a transaction fee that is added to the incentive value of the block containing the transaction. Once a predetermined number of coins have entered circulation, the incentive can transition entirely to transaction fees and be completely inflation free.</p>
 <p>The incentive may help encourage nodes to stay honest. If a greedy attacker is able to assemble more CPU power than all the honest nodes, he would have to choose between using it to defraud people by stealing back his payments, or using it to generate new coins. He ought to find it more profitable to play by the rules, such rules that favour him with more new coins than everyone else combined, than to undermine the system and the validity of his own wealth.</p>
 <h2 id="reclaiming-disk-space">7. Reclaiming Disk Space</h2>
-<p>Once the latest transaction in a coin is buried under enough blocks, the spent transactions before it can be discarded to save disk space. To facilitate this without breaking the block’s hash, transactions are hashed in a Merkle Tree <span class="citation" data-cites="1E30OhQ6H 17Cp5JvP8 10yGvxo1W">[<a href="#ref-17Cp5JvP8">2</a>,<a href="#ref-10yGvxo1W">5</a>,<a href="#ref-1E30OhQ6H">7</a>]</span>, with only the root included in the block’s hash. Old blocks can then be compacted by stubbing off branches of the tree. The interior hashes do not need to be stored.</p>
+<p>Once the latest transaction in a coin is buried under enough blocks, the spent transactions before it can be discarded to save disk space. To facilitate this without breaking the block’s hash, transactions are hashed in a Merkle Tree <span class="citation" data-cites="1E30OhQ6H 17Cp5JvP8 10yGvxo1W">[<a href="#ref-17Cp5JvP8" role="doc-biblioref">2</a>,<a href="#ref-10yGvxo1W" role="doc-biblioref">5</a>,<a href="#ref-1E30OhQ6H" role="doc-biblioref">7</a>]</span>, with only the root included in the block’s hash. Old blocks can then be compacted by stubbing off branches of the tree. The interior hashes do not need to be stored.</p>
 <figure>
-<img src="images/reclaiming-disk-space.svg" />
+<img src="images/reclaiming-disk-space.svg" alt="" />
 </figure>
 <p>A block header with no transactions would be about 80 bytes. If we suppose blocks are generated every 10 minutes, 80 bytes * 6 * 24 * 365 = 4.2MB per year. With computer systems typically selling with 2GB of RAM as of 2008, and Moore’s Law predicting current growth of 1.2GB per year, storage should not be a problem even if the block headers must be kept in memory.</p>
 <h2 id="simplified-payment-verification">8. Simplified Payment Verification</h2>
 <p>It is possible to verify payments without running a full network node. A user only needs to keep a copy of the block headers of the longest proof-of-work chain, which he can get by querying network nodes until he’s convinced he has the longest chain, and obtain the Merkle branch linking the transaction to the block it’s timestamped in. He can’t check the transaction for himself, but by linking it to a place in the chain, he can see that a network node has accepted it, and blocks added after it further confirm the network has accepted it.</p>
 <figure>
-<img src="images/simplified-payment-verification.svg" />
+<img src="images/simplified-payment-verification.svg" alt="" />
 </figure>
 <p>As such, the verification is reliable as long as honest nodes control the network, but is more vulnerable if the network is overpowered by an attacker. While network nodes can verify transactions for themselves, the simplified method can be fooled by an attacker’s fabricated transactions for as long as the attacker can continue to overpower the network. One strategy to protect against this would be to accept alerts from network nodes when they detect an invalid block, prompting the user’s software to download the full block and alerted transactions to confirm the inconsistency. Businesses that receive frequent payments will probably still want to run their own nodes for more independent security and quicker verification.</p>
 <h2 id="combining-and-splitting-value">9. Combining and Splitting Value</h2>
 <p>Although it would be possible to handle coins individually, it would be unwieldy to make a separate transaction for every cent in a transfer. To allow value to be split and combined, transactions contain multiple inputs and outputs. Normally there will be either a single input from a larger previous transaction or multiple inputs combining smaller amounts, and at most two outputs: one for the payment, and one returning the change, if any, back to the sender.</p>
 <figure>
-<img src="images/combining-splitting-value.svg" />
+<img src="images/combining-splitting-value.svg" alt="" />
 </figure>
 <p>It should be noted that fan-out, where a transaction depends on several transactions, and those transactions depend on many more, is not a problem here. There is never the need to extract a complete standalone copy of a transaction’s history.</p>
 <h2 id="privacy">10. Privacy</h2>
 <p>The traditional banking model achieves a level of privacy by limiting access to information to the parties involved and the trusted third party. The necessity to announce all transactions publicly precludes this method, but privacy can still be maintained by breaking the flow of information in another place: by keeping public keys anonymous. The public can see that someone is sending an amount to someone else, but without information linking the transaction to anyone. This is similar to the level of information released by stock exchanges, where the time and size of individual trades, the “tape”, is made public, but without telling who the parties were.</p>
 <figure>
-<img src="images/privacy.svg" />
+<img src="images/privacy.svg" alt="" />
 </figure>
 <p>As an additional firewall, a new key pair should be used for each transaction to keep them from being linked to a common owner. Some linking is still unavoidable with multi-input transactions, which necessarily reveal that their inputs were owned by the same owner. The risk is that if the owner of a key is revealed, linking could reveal other transactions that belonged to the same owner.</p>
 <h2 id="calculations">11. Calculations</h2>
 <p>We consider the scenario of an attacker trying to generate an alternate chain faster than the honest chain. Even if this is accomplished, it does not throw the system open to arbitrary changes, such as creating value out of thin air or taking money that never belonged to the attacker. Nodes are not going to accept an invalid transaction as payment, and honest nodes will never accept a block containing them. An attacker can only try to change one of his own transactions to take back money he recently spent.</p>
 <p>The race between the honest chain and an attacker chain can be characterized as a Binomial Random Walk. The success event is the honest chain being extended by one block, increasing its lead by +1, and the failure event is the attacker’s chain being extended by one block, reducing the gap by -1.</p>
-<p>The probability of an attacker catching up from a given deficit is analogous to a Gambler’s Ruin problem. Suppose a gambler with unlimited credit starts at a deficit and plays potentially an infinite number of trials to try to reach breakeven. We can calculate the probability he ever reaches breakeven, or that an attacker ever catches up with the honest chain, as follows <span class="citation" data-cites="dPawqJne">[<a href="#ref-dPawqJne">8</a>]</span>:</p>
+<p>The probability of an attacker catching up from a given deficit is analogous to a Gambler’s Ruin problem. Suppose a gambler with unlimited credit starts at a deficit and plays potentially an infinite number of trials to try to reach breakeven. We can calculate the probability he ever reaches breakeven, or that an attacker ever catches up with the honest chain, as follows <span class="citation" data-cites="dPawqJne">[<a href="#ref-dPawqJne" role="doc-biblioref">8</a>]</span>:</p>
 <p><span class="math display">\[
 \begin{eqnarray*}
                 \large p &amp;=&amp; \text{ probability an honest node finds the next block}\\
@@ -194,22 +225,22 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
                 \left ( 1-(q/p)^{(z-k)} \right )
 \]</span></p>
 <p>Converting to C code…</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode c"><code class="sourceCode c"><a class="sourceLine" id="cb1-1" title="1"><span class="pp">#include</span></a>
-<a class="sourceLine" id="cb1-2" title="2"><span class="dt">double</span> AttackerSuccessProbability(<span class="dt">double</span> q, <span class="dt">int</span> z)</a>
-<a class="sourceLine" id="cb1-3" title="3">{</a>
-<a class="sourceLine" id="cb1-4" title="4">    <span class="dt">double</span> p = <span class="fl">1.0</span> - q;</a>
-<a class="sourceLine" id="cb1-5" title="5">    <span class="dt">double</span> lambda = z * (q / p);</a>
-<a class="sourceLine" id="cb1-6" title="6">    <span class="dt">double</span> sum = <span class="fl">1.0</span>;</a>
-<a class="sourceLine" id="cb1-7" title="7">    <span class="dt">int</span> i, k;</a>
-<a class="sourceLine" id="cb1-8" title="8">    <span class="cf">for</span> (k = <span class="dv">0</span>; k &lt;= z; k++)</a>
-<a class="sourceLine" id="cb1-9" title="9">    {</a>
-<a class="sourceLine" id="cb1-10" title="10">        <span class="dt">double</span> poisson = exp(-lambda);</a>
-<a class="sourceLine" id="cb1-11" title="11">        <span class="cf">for</span> (i = <span class="dv">1</span>; i &lt;= k; i++)</a>
-<a class="sourceLine" id="cb1-12" title="12">            poisson *= lambda / i;</a>
-<a class="sourceLine" id="cb1-13" title="13">        sum -= poisson * (<span class="dv">1</span> - pow(q / p, z - k));</a>
-<a class="sourceLine" id="cb1-14" title="14">    }</a>
-<a class="sourceLine" id="cb1-15" title="15">    <span class="cf">return</span> sum;</a>
-<a class="sourceLine" id="cb1-16" title="16">}</a></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb1-1"><a href="#cb1-1"></a><span class="pp">#include</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="dt">double</span> AttackerSuccessProbability(<span class="dt">double</span> q, <span class="dt">int</span> z)</span>
+<span id="cb1-3"><a href="#cb1-3"></a>{</span>
+<span id="cb1-4"><a href="#cb1-4"></a>    <span class="dt">double</span> p = <span class="fl">1.0</span> - q;</span>
+<span id="cb1-5"><a href="#cb1-5"></a>    <span class="dt">double</span> lambda = z * (q / p);</span>
+<span id="cb1-6"><a href="#cb1-6"></a>    <span class="dt">double</span> sum = <span class="fl">1.0</span>;</span>
+<span id="cb1-7"><a href="#cb1-7"></a>    <span class="dt">int</span> i, k;</span>
+<span id="cb1-8"><a href="#cb1-8"></a>    <span class="cf">for</span> (k = <span class="dv">0</span>; k &lt;= z; k++)</span>
+<span id="cb1-9"><a href="#cb1-9"></a>    {</span>
+<span id="cb1-10"><a href="#cb1-10"></a>        <span class="dt">double</span> poisson = exp(-lambda);</span>
+<span id="cb1-11"><a href="#cb1-11"></a>        <span class="cf">for</span> (i = <span class="dv">1</span>; i &lt;= k; i++)</span>
+<span id="cb1-12"><a href="#cb1-12"></a>            poisson *= lambda / i;</span>
+<span id="cb1-13"><a href="#cb1-13"></a>        sum -= poisson * (<span class="dv">1</span> - pow(q / p, z - k));</span>
+<span id="cb1-14"><a href="#cb1-14"></a>    }</span>
+<span id="cb1-15"><a href="#cb1-15"></a>    <span class="cf">return</span> sum;</span>
+<span id="cb1-16"><a href="#cb1-16"></a>}</span></code></pre></div>
 <p>Running some results, we can see the probability drop off exponentially with <span class="math inline">\(z\)</span>.</p>
 <pre><code>q=0.1
 z=0    P=1.0000000
@@ -250,7 +281,7 @@ q=0.45   z=340</code></pre>
 <p>We have proposed a system for electronic transactions without relying on trust. We started with the usual framework of coins made from digital signatures, which provides strong control of ownership, but is incomplete without a way to prevent double-spending. To solve this, we proposed a peer-to-peer network using proof-of-work to record a public history of transactions that quickly becomes computationally impractical for an attacker to change if honest nodes control a majority of CPU power. The network is robust in its unstructured simplicity. Nodes work all at once with little coordination. They do not need to be identified, since messages are not routed to any particular place and only need to be delivered on a best effort basis. Nodes can leave and rejoin the network at will, accepting the proof-of-work chain as proof of what happened while they were gone. They vote with their CPU power, expressing their acceptance of valid blocks by working on extending them and rejecting invalid blocks by refusing to work on them. Any needed rules and incentives can be enforced with this consensus mechanism.</p>
 <h2 id="references" class="page_break_before">References</h2>
 <!-- Explicitly insert bibliography here -->
-<div id="refs">
+<div id="refs" role="doc-bibliography">
 <div id="ref-PBY14TLl">
 <p>1. <strong>b-money</strong><br />
 Dai Wei<br />
@@ -324,17 +355,15 @@ William Feller<br />
         body {
             position: relative;
             box-sizing: border-box;
-            max-width: 8.5in;
             font-size: 12pt;
             line-height: 1.5;
+            max-width: 8.5in;
             margin: 20px auto;
             padding: 40px;
             border-radius: 5px;
             border: solid 1px #bdbdbd;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
             background: #ffffff;
-            word-break: all;
-            word-break: break-word;
         }
     }
 
@@ -369,8 +398,7 @@ William Feller<br />
 
     /* biggest heading */
     h1 {
-        margin-top: 40px;
-        margin-bottom: 30px;
+        margin: 40px 0;
         text-align: center;
     }
 
@@ -393,7 +421,7 @@ William Feller<br />
     /* manuscript title caption text (ie "automatically generated on") */
     header + p {
         text-align: center;
-        margin-top: 0;
+        margin-top: 10px;
     }
 
     /* -------------------------------------------------- */
@@ -403,7 +431,13 @@ William Feller<br />
     /* links */
     a {
         color: #2196f3;
-        word-break: break-all;
+        overflow-wrap: break-word;
+    }
+
+    /* normal links (not empty, not button link, not syntax highlighting link) */
+    a:not(:empty):not(.button):not(.sourceLine) {
+        padding-left: 1px;
+        padding-right: 1px;
     }
 
     /* superscripts and subscripts */
@@ -523,16 +557,13 @@ William Feller<br />
         border: solid 1px #bdbdbd;
         padding: 10px;
         /* squash table if too wide for page by forcing line breaks */
-        /* put line break break anywhere in text */
-        word-break: break-all;
-        /* put line break between words. if not supported by browser, will fall back to break-all */
-        word-break: break-word;
+        overflow-wrap: break-word;
     }
 
     /* header row and even rows */
     th,
     tr:nth-child(2n) {
-        background-color: #f5f5f5;
+        background-color: #fafafa;
     }
 
     /* odd rows */
@@ -783,7 +814,7 @@ William Feller<br />
     @media print {
         @page {
             /* suggested printing margin */
-            margin: 0.75in;
+            margin: 0.5in;
         }
 
         /* document and "page" elements */
@@ -792,6 +823,64 @@ William Feller<br />
             padding: 0;
             width: 100%;
             height: 100%;
+        }
+
+        /* "page" element */
+        body {
+            font-size: 11pt !important;
+            line-height: 1.35;
+        }
+
+        /* all headings */
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 15px 0;
+        }
+
+        /* heading 1 */
+        h1 {
+            font-size: 1.75em;
+        }
+
+        /* heading 2 */
+        h2 {
+            font-size: 1.25em;
+            margin-top: 0;
+        }
+
+        /* heading 3 */
+        h3 {
+            font-size: 1.10em;
+        }
+
+        /* figures and tables */
+        figure, table {
+            font-size: 0.85em;
+        }
+
+        /* table cells */
+        th,
+        td {
+            padding: 5px;
+        }
+
+        /* shrink font awesome icons */
+        i.fas,
+        i.fab,
+        i.far,
+        i.fal {
+            transform: scale(0.85);
+        }
+
+        /* decrease banner margins */
+        .banner {
+            margin-top: 15px;
+            margin-bottom: 15px;
+            padding: 15px;
         }
 
         /* class for centering an element vertically on its own page */
@@ -804,11 +893,6 @@ William Feller<br />
             vertical-align: middle;
             break-before: page;
             break-after: page;
-        }
-
-        /* <h2> heading */
-        h2 {
-            margin-top: 0;
         }
 
         /* always insert a page break before the element */
@@ -1021,8 +1105,7 @@ William Feller<br />
             border: solid 1px #bdbdbd;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
             background: #ffffff;
-            word-break: all;
-            word-break: break-word;
+            overflow-wrap: break-word;
         }
 
         /* tooltip copy of paragraphs and figures */
@@ -1127,19 +1210,13 @@ William Feller<br />
     /* -------------------------------------------------- */
 
     @media only screen {
-        /* toc panel when open */
+        /* toc panel */
         #toc_panel {
             box-sizing: border-box;
             position: fixed;
             top: 0;
             left: 0;
-            min-width: 260px;
-            max-width: 480px;
-            /* keep panel edge consistent distance away from "page" edge */
-            width: calc(((100vw - 8.5in) / 2) - 30px - 40px);
-            bottom: 0;
             background: #ffffff;
-            border-right: solid 1px #bdbdbd;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
             z-index: 2;
         }
@@ -1149,39 +1226,48 @@ William Feller<br />
             min-width: 60px;
             width: 60px;
             height: 60px;
+            border-right: solid 1px #bdbdbd;
             border-bottom: solid 1px #bdbdbd;
+        }
+
+        /* toc panel when open */
+        #toc_panel[data-open="true"] {
+            min-width: 260px;
+            max-width: 480px;
+            /* keep panel edge consistent distance away from "page" edge */
+            width: calc(((100vw - 8.5in) / 2) - 30px - 40px);
+            bottom: 0;
+            border-right: solid 1px #bdbdbd;
         }
 
         /* toc panel header */
-        #toc_panel > h3 {
+        #toc_header {
             box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
             height: 60px;
             margin: 0;
             padding: 20px;
-            border-bottom: solid 1px #bdbdbd;
         }
 
-        /* toc panel when hovered */
-        #toc_panel > h3:hover {
+        /* toc panel header when hovered */
+        #toc_header:hover {
             cursor: pointer;
+        }
+
+        /* toc panel header when panel open */
+        #toc_panel[data-open="true"] > #toc_header {
+            border-bottom: solid 1px #bdbdbd;
         }
 
         /* toc open/close header button */
         #toc_button {
             margin-right: 20px;
-            vertical-align: top;
-        }
-
-        /* toc header text */
-        #toc_header_text {
-            vertical-align: top;
-            font-weight: 600;
-            position: relative;
-            top: -4px;
         }
 
         /* hide toc list and header text when closed */
-        #toc_panel[data-open="false"] #toc_header_text,
+        #toc_panel[data-open="false"] > #toc_header > *:not(#toc_button),
         #toc_panel[data-open="false"] > #toc_list {
             display: none;
         }
@@ -1754,6 +1840,7 @@ William Feller<br />
             // trigger any function listening for "onscroll" event
             window.dispatchEvent(new Event('scroll'));
             window.scrollTo(0, y);
+            document.activeElement.blur();
             element.focus();
         }
 
@@ -1959,9 +2046,6 @@ William Feller<br />
             // whether user must click off to close tooltip instead of just
             // un-hovering
             clickClose: 'false',
-            // whether to keep tooltip horizontal position when moving between
-            // prev/next occurrences
-            keepHorizontal: 'true',
             // delay (in ms) between opening and closing tooltip
             delay: '100',
             // whether plugin is on or not
@@ -2042,8 +2126,10 @@ William Feller<br />
             // regular link click (and navigation) on second tap
             if (event.target === document.activeElement)
                 event.target.click();
-            else
+            else {
+                document.activeElement.blur();
                 event.target.focus();
+            }
             if (event.cancelable)
                 event.preventDefault();
             event.stopPropagation();
@@ -2060,22 +2146,27 @@ William Feller<br />
             if (!event || !event.key)
                 return;
 
-            // trigger click of prev/next button
             switch (event.key) {
-            case 'ArrowLeft':
-                const prevButton = document.getElementById(
-                    'tooltip_prev_button'
-                );
-                if (prevButton)
-                    prevButton.click();
-                break;
-            case 'ArrowRight':
-                const nextButton = document.getElementById(
-                    'tooltip_next_button'
-                );
-                if (nextButton)
-                    nextButton.click();
-                break;
+                // trigger click of prev button
+                case 'ArrowLeft':
+                    const prevButton = document.getElementById(
+                        'tooltip_prev_button'
+                    );
+                    if (prevButton)
+                        prevButton.click();
+                    break;
+                // trigger click of next button
+                case 'ArrowRight':
+                    const nextButton = document.getElementById(
+                        'tooltip_next_button'
+                    );
+                    if (nextButton)
+                        nextButton.click();
+                    break;
+                // close on esc
+                case 'Escape':
+                    closeTooltip();
+                    break;
             }
         }
 
@@ -2117,12 +2208,8 @@ William Feller<br />
 
         // open tooltip
         function openTooltip(link) {
-            // if setting is on and already-open tooltip can be found, store
-            // original x position of tooltip
-            let prevX;
-            const prevTooltip = document.getElementById('tooltip');
-            if (options.keepHorizontal === 'true' && prevTooltip)
-                prevX = getRectInPage(prevTooltip).left;
+            // delete tooltip if it exists, start fresh
+            closeTooltip();
 
             // make tooltip element
             const tooltip = makeTooltip(link);
@@ -2141,7 +2228,7 @@ William Feller<br />
 
             // position tooltip
             const position = function() {
-                positionTooltip(link, prevX);
+                positionTooltip(link);
             };
             position();
 
@@ -2160,9 +2247,6 @@ William Feller<br />
 
         // make tooltip
         function makeTooltip(link) {
-            // delete tooltip if it exists, start fresh
-            closeTooltip();
-
             // get target element that link points to
             const source = getSource(link);
 
@@ -2357,7 +2441,7 @@ William Feller<br />
         // when prev/next arrow button is clicked
         function onPrevNextClick(link, prevNextLink) {
             if (link && prevNextLink)
-                goToElement(prevNextLink, getRectInView(link).top);
+                goToElement(prevNextLink, window.innerHeight * 0.5);
         }
 
         // scroll to and focus element
@@ -2371,6 +2455,7 @@ William Feller<br />
             // trigger any function listening for "onscroll" event
             window.dispatchEvent(new Event('scroll'));
             window.scrollTo(0, y);
+            document.activeElement.blur();
             element.focus();
         }
 
@@ -2725,6 +2810,7 @@ William Feller<br />
             // trigger any function listening for "onscroll" event
             window.dispatchEvent(new Event('scroll'));
             window.scrollTo(0, y);
+            document.activeElement.blur();
             element.focus();
         }
 
@@ -2873,7 +2959,7 @@ William Feller<br />
             const links = getLinks();
             for (const link of links) {
                 // attach mouse and focus listeners to link
-                link.addEventListener('mouseover', onLinkFocus);
+                link.addEventListener('mouseenter', onLinkFocus);
                 link.addEventListener('focus', onLinkFocus);
                 link.addEventListener('mouseleave', onLinkUnhover);
             }
@@ -3043,15 +3129,15 @@ William Feller<br />
             // which types of elements to add links for, in
             // "document.querySelector" format
             typesQuery: 'h1, h2, h3',
+            // whether default behavior is to be closed ('false'), open
+            // ('true'), or only open when screen wide enough to fit panel
+            // ('auto'). note: still always starts closed when page loads.
+            open: 'auto',
             // if list item is more than this many characters, text will be
             // truncated
             charLimit: '50',
             // whether or not to show bullets next to each toc item
             bullets: 'false',
-            // whether to always start closed ('false'), always start opened
-            // ('true'), or start open when screen wide enough to fit panel
-            // ('auto')
-            startOpen: 'false',
             // whether plugin is on or not
             enabled: 'true'
         };
@@ -3073,42 +3159,62 @@ William Feller<br />
             makeEntries(panel);
             document.body.insertBefore(panel, document.body.firstChild);
 
-            // start panel open/closed based on option
-            if (
-                options.startOpen === 'true' ||
-                (options.startOpen === 'auto' && isSmallScreen())
-            )
-                openPanel();
-            else
-                closePanel();
+            closePanel();
 
             // attach click, scroll, and hash change listeners to window
             window.addEventListener('click', onClick);
             window.addEventListener('touchstart', onClick);
             window.addEventListener('scroll', onScroll);
             window.addEventListener('hashchange', onScroll);
+            window.addEventListener('keyup', onKeyUp);
             onScroll();
 
             // add class to push document body down out of way of toc button
             document.body.classList.add('toc_body_nudge');
         }
 
-        // determine if on mobile-like device with small screen
+        // determine if screen wide enough to fit toc panel
         function isSmallScreen() {
-            const page = window.getComputedStyle(document.body);
-            const width =
-                parseInt(page.width) || parseInt(page.maxWidth) || 816;
-            return width + 320 < window.innerWidth;
+            // in default theme:
+            // 816px = 8.5in = width of "page" (<body>) element
+            // 260px = min width of toc panel (*2 for both sides of <body>)
+            return window.innerWidth < 816 + 260 * 2;
+        }
+
+        // open/close panel based on option and screen size
+        function openOrClosePanel() {
+            if (
+                options.open === 'true' ||
+                (options.open === 'auto' && !isSmallScreen())
+            )
+                openPanel();
+            else
+                closePanel();
         }
 
         // when mouse is clicked anywhere in window
         function onClick() {
-            closePanel();
+            const panel = document.getElementById('toc_panel');
+            if (!panel)
+                return;
+
+            if (panel.dataset.open === 'true')
+                openOrClosePanel();
         }
 
         // when window is scrolled or hash changed
         function onScroll() {
             highlightViewed();
+        }
+
+        // when key pressed
+        function onKeyUp(event) {
+            if (!event || !event.key)
+                return;
+
+            // close on esc
+            if (event.key === 'Escape')
+                closePanel();
         }
 
         // find entry of currently viewed document section in toc and highlight
@@ -3138,6 +3244,7 @@ William Feller<br />
                     elementsWithIds.push(element);
             }
 
+
             // get first or previous element in top half of view
             for (let i = 0; i < elementsWithIds.length; i++) {
                 const element = elementsWithIds[i];
@@ -3163,7 +3270,8 @@ William Feller<br />
                 panel.dataset.bullets = 'true';
 
             // create header
-            const header = document.createElement('h3');
+            const header = document.createElement('div');
+            header.id = 'toc_header';
 
             // create toc button
             const button = document.createElement('button');
@@ -3174,9 +3282,8 @@ William Feller<br />
             button.classList.add('icon_button');
 
             // create header text
-            const text = document.createElement('span');
+            const text = document.createElement('h3');
             text.innerHTML = 'Table of Contents';
-            text.id = 'toc_header_text';
 
             // create container for toc list
             const list = document.createElement('div');
@@ -3208,18 +3315,18 @@ William Feller<br />
                 const link = document.createElement('a');
                 link.classList.add('toc_link');
                 switch (element.tagName.toLowerCase()) {
-                case 'h1':
-                    link.dataset.level = '1';
-                    break;
-                case 'h2':
-                    link.dataset.level = '2';
-                    break;
-                case 'h3':
-                    link.dataset.level = '3';
-                    break;
-                case 'h4':
-                    link.dataset.level = '4';
-                    break;
+                    case 'h1':
+                        link.dataset.level = '1';
+                        break;
+                    case 'h2':
+                        link.dataset.level = '2';
+                        break;
+                    case 'h3':
+                        link.dataset.level = '3';
+                        break;
+                    case 'h4':
+                        link.dataset.level = '4';
+                        break;
                 }
                 link.title = element.innerText;
                 let text = element.innerText;
@@ -3254,8 +3361,7 @@ William Feller<br />
 
         // when link is clicked
         function onLinkClick() {
-            if (isSmallScreen())
-                closePanel();
+            openOrClosePanel();
         }
 
         // open panel if closed, close if opened
@@ -3343,6 +3449,9 @@ William Feller<br />
             // whether to fit image to view ('fit'), display at 100% and shrink
             // if necessary ('shrink'), or always display at 100% ('100')
             defaultZoom: 'fit',
+            // whether to zoom in/out toward center of view ('true') or mouse
+            // ('false')
+            centerZoom: 'false',
             // whether plugin is on or not
             enabled: 'true'
         };
@@ -3383,22 +3492,27 @@ William Feller<br />
             if (!event || !event.key)
                 return;
 
-            // trigger click of prev/next button
             switch (event.key) {
-            case 'ArrowLeft':
-                const prevButton = document.getElementById(
-                    'lightbox_prev_button'
-                );
-                if (prevButton)
-                    prevButton.click();
-                break;
-            case 'ArrowRight':
-                const nextButton = document.getElementById(
-                    'lightbox_next_button'
-                );
-                if (nextButton)
-                    nextButton.click();
-                break;
+                // trigger click of prev button
+                case 'ArrowLeft':
+                    const prevButton = document.getElementById(
+                        'lightbox_prev_button'
+                    );
+                    if (prevButton)
+                        prevButton.click();
+                    break;
+                // trigger click of next button
+                case 'ArrowRight':
+                    const nextButton = document.getElementById(
+                        'lightbox_next_button'
+                    );
+                    if (nextButton)
+                        nextButton.click();
+                    break;
+                // close on esc
+                case 'Escape':
+                    closeLightbox();
+                    break;
             }
         }
 
@@ -3625,8 +3739,11 @@ William Feller<br />
                 event.stopPropagation();
 
                 // point around which to scale img
-                const originX = window.mouseX;
-                const originY = window.mouseY;
+                const viewRect = container.getBoundingClientRect();
+                const viewX = (viewRect.left + viewRect.right) / 2;
+                const viewY = (viewRect.top + viewRect.bottom) / 2;
+                const originX = options.centerZoom === 'true' ? viewX : mouseX;
+                const originY = options.centerZoom === 'true' ? viewY : mouseY;
 
                 // get point on image under origin
                 const oldRect = img.getBoundingClientRect();
@@ -3655,7 +3772,7 @@ William Feller<br />
             };
 
             // when container is clicked
-            function onContainerClick() {
+            function onContainerClick(event) {
                 // if container itself is target of click, and not other
                 // element above it
                 if (event.target === this)
@@ -3701,6 +3818,10 @@ William Feller<br />
                 translateY = clickTranslateY + window.mouseY - clickMouseY;
                 updateTransform();
                 event.preventDefault();
+
+                // remove global listener if lightbox removed from document
+                if (!document.body.contains(container))
+                    window.removeEventListener('mousemove', onWindowMouseMove);
             };
 
             // when window is resized
@@ -3716,7 +3837,8 @@ William Feller<br />
             img.addEventListener('dblclick', fit);
             img.addEventListener('mousedown', onImageMouseDown);
             container.addEventListener('wheel', onContainerWheel);
-            container.addEventListener('click', onContainerClick);
+            container.addEventListener('mousedown', onContainerClick);
+            container.addEventListener('touchstart', onContainerClick);
             window.addEventListener('mouseup', onWindowMouseUp);
             window.addEventListener('mousemove', onWindowMouseMove);
             window.addEventListener('resize', onWindowResize);
@@ -3919,13 +4041,144 @@ William Feller<br />
         ></path>
     </svg>
 </template>
+<!-- attributes plugin -->
+
+<script>
+    (function() {
+        // /////////////////////////
+        // DESCRIPTION
+        // /////////////////////////
+
+        // This Manubot plugin allows arbitrary HTML attributes to be attached
+        // to (almost) any element. Place an HTML comment inside or next to the
+        // desired element in the format <!-- $attribute="value" -->
+
+        // /////////////////////////
+        // OPTIONS
+        // /////////////////////////
+
+        // plugin name prefix for url parameters
+        const pluginName = 'attributes';
+
+        // default plugin options
+        const options = {
+            // whether plugin is on or not
+            enabled: 'true'
+        };
+
+        // change options above, or override with url parameter, eg:
+        // 'manuscript.html?pluginName-enabled=false'
+
+        // /////////////////////////
+        // SCRIPT
+        // /////////////////////////
+
+        // start script
+        function start() {
+            // get list of comments in document
+            const comments = findComments();
+
+            for(const comment of comments)
+                if (comment.parentElement)
+                    addAttributes(
+                        comment.parentElement,
+                        comment.nodeValue.trim()
+                    );
+        }
+
+        // add html attributes to specified element based on string of 
+        // html attributes and values
+        function addAttributes(element, text) {
+            // regex's for finding attribute/value pairs in the format of
+            // attribute="value" or attribute='value
+            const regex2 = /\$([a-zA-Z\-]+)?=\"(.+?)\"/;
+            const regex1 = /\$([a-zA-Z\-]+)?=\'(.+?)\'/;
+
+            // loop through attribute/value pairs
+            let match;
+            while(match = text.match(regex2) || text.match(regex1)) {
+                // get attribute and value from regex capture groups
+                let attribute = match[1];
+                let value = match[2];
+
+                // remove from string
+                text = text.substring(match.index + match[0].length);
+
+                if (!attribute || !value)
+                    break;
+
+                // set attribute of parent element
+                try {
+                    element.setAttribute(attribute, value);
+                } catch(error) {
+                    console.log(error);
+                }
+
+                // special case for colspan
+                if (attribute === 'colspan')
+                    removeTableCells(element, value);
+            }
+        }
+
+        // get list of comment elements in document
+        function findComments() {
+            const comments = [];
+
+            // iterate over comment nodes in document
+            function acceptNode(node) {
+                return NodeFilter.FILTER_ACCEPT;
+            }
+            const iterator = document.createNodeIterator(
+                document.body,
+                NodeFilter.SHOW_COMMENT,
+                acceptNode
+            );
+            let node;
+            while(node = iterator.nextNode())
+                comments.push(node);
+
+            return comments;
+        }
+
+        // remove certain number of cells after specified cell
+        function removeTableCells(cell, number) {
+            number = parseInt(number);
+            if (!number)
+                return;
+
+            // remove elements
+            for(; number > 1; number--) {
+                if (cell.nextElementSibling)
+                    cell.nextElementSibling.remove();
+            }
+        }
+
+        // load options from url parameters
+        function loadOptions() {
+            const url = window.location.search;
+            const params = new URLSearchParams(url);
+            for (const optionName of Object.keys(options)) {
+                const paramName = pluginName + '-' + optionName;
+                const param = params.get(paramName);
+                if (param !== '' && param !== null)
+                    options[optionName] = param;
+            }
+        }
+        loadOptions();
+
+        // start script when document is finished loading
+        if (options.enabled === 'true')
+            window.addEventListener('load', start);
+    })();
+</script>
 <!-- math plugin configuration -->
 
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
         "CommonHTML": { linebreaks: { automatic: true } },
         "HTML-CSS": { linebreaks: { automatic: true } },
-        "SVG": { linebreaks: { automatic: true } }
+        "SVG": { linebreaks: { automatic: true } },
+        "fast-preview": { disabled: true }
     });
 </script>
 

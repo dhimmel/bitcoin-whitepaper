@@ -1,24 +1,47 @@
 {
-  "date": "March 21, 2019",
-  "authors": [
-    {
-      "name": "Satoshi Nakamoto",
-      "initials": "SN",
-      "email": "satoshin@gmx.com"
-    }
-  ],
-  "ci_source": {
-    "repo_slug": "dhimmel/bitcoin-whitepaper",
-    "repo_owner": "dhimmel",
-    "repo_name": "bitcoin-whitepaper",
-    "commit": "cb1f2c12eec8b56db9ef5f641ec805e2d449d319"
+  "pandoc": {
+    "title": "Bitcoin: A Peer-to-Peer Electronic Cash System",
+    "keywords": [
+      "bitcoin",
+      "whitepaper",
+      "cryptocurrency"
+    ],
+    "date-meta": "2019-11-20",
+    "author-meta": [
+      "Satoshi Nakamoto"
+    ],
+    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Bitcoin: A Peer-to-Peer Electronic Cash System\" />\n<meta name=\"citation_title\" content=\"Bitcoin: A Peer-to-Peer Electronic Cash System\" />\n<meta property=\"og:title\" content=\"Bitcoin: A Peer-to-Peer Electronic Cash System\" />\n<meta property=\"twitter:title\" content=\"Bitcoin: A Peer-to-Peer Electronic Cash System\" />\n<meta name=\"dc.date\" content=\"2019-11-20\" />\n<meta name=\"citation_publication_date\" content=\"2019-11-20\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Satoshi Nakamoto\" />\n<link rel=\"canonical\" href=\"https://dhimmel.github.io/bitcoin-whitepaper/\" />\n<meta property=\"og:url\" content=\"https://dhimmel.github.io/bitcoin-whitepaper/\" />\n<meta property=\"twitter:url\" content=\"https://dhimmel.github.io/bitcoin-whitepaper/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://dhimmel.github.io/bitcoin-whitepaper/\" />\n<meta name=\"citation_pdf_url\" content=\"https://dhimmel.github.io/bitcoin-whitepaper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://dhimmel.github.io/bitcoin-whitepaper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://dhimmel.github.io/bitcoin-whitepaper/v/fd3d8fd229b5b77b3f6dfdff2a5ac914e3296e2d/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://dhimmel.github.io/bitcoin-whitepaper/v/fd3d8fd229b5b77b3f6dfdff2a5ac914e3296e2d/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://dhimmel.github.io/bitcoin-whitepaper/v/fd3d8fd229b5b77b3f6dfdff2a5ac914e3296e2d/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->"
   },
-  "manuscript_stats": {
-    "reference_counts": {
-      "doi": 4,
-      "url": 4,
-      "total": 8
+  "manubot": {
+    "date": "November 20, 2019",
+    "authors": [
+      {
+        "name": "Satoshi Nakamoto",
+        "initials": "SN",
+        "email": "satoshin@gmx.com"
+      }
+    ],
+    "ci_source": {
+      "provider": "travis",
+      "repo_slug": "dhimmel/bitcoin-whitepaper",
+      "repo_owner": "dhimmel",
+      "repo_name": "bitcoin-whitepaper",
+      "commit": "fd3d8fd229b5b77b3f6dfdff2a5ac914e3296e2d",
+      "triggering_commit": "fd3d8fd229b5b77b3f6dfdff2a5ac914e3296e2d",
+      "build_url": "https://travis-ci.org/dhimmel/bitcoin-whitepaper/builds/614602629",
+      "job_url": "https://travis-ci.org/dhimmel/bitcoin-whitepaper/jobs/614602630"
     },
-    "word_count": 3525
+    "html_url": "https://dhimmel.github.io/bitcoin-whitepaper/",
+    "pdf_url": "https://dhimmel.github.io/bitcoin-whitepaper/manuscript.pdf",
+    "html_url_versioned": "https://dhimmel.github.io/bitcoin-whitepaper/v/fd3d8fd229b5b77b3f6dfdff2a5ac914e3296e2d/",
+    "pdf_url_versioned": "https://dhimmel.github.io/bitcoin-whitepaper/v/fd3d8fd229b5b77b3f6dfdff2a5ac914e3296e2d/manuscript.pdf",
+    "manuscript_stats": {
+      "reference_counts": {
+        "doi": 4,
+        "url": 4,
+        "total": 8
+      },
+      "word_count": 3536
+    }
   }
 }
