@@ -34,31 +34,31 @@ header-includes: '<!--
 
   <meta name="citation_author" content="Satoshi Nakamoto" />
 
-  <link rel="canonical" href="https://dhimmel.github.io/bitcoin-whitepaper/" />
+  <link rel="canonical" href="https://git.dhimmel.com/bitcoin-whitepaper/" />
 
-  <meta property="og:url" content="https://dhimmel.github.io/bitcoin-whitepaper/" />
+  <meta property="og:url" content="https://git.dhimmel.com/bitcoin-whitepaper/" />
 
-  <meta property="twitter:url" content="https://dhimmel.github.io/bitcoin-whitepaper/" />
+  <meta property="twitter:url" content="https://git.dhimmel.com/bitcoin-whitepaper/" />
 
-  <meta name="citation_fulltext_html_url" content="https://dhimmel.github.io/bitcoin-whitepaper/" />
+  <meta name="citation_fulltext_html_url" content="https://git.dhimmel.com/bitcoin-whitepaper/" />
 
-  <meta name="citation_pdf_url" content="https://dhimmel.github.io/bitcoin-whitepaper/manuscript.pdf" />
+  <meta name="citation_pdf_url" content="https://git.dhimmel.com/bitcoin-whitepaper/manuscript.pdf" />
 
-  <link rel="alternate" type="application/pdf" href="https://dhimmel.github.io/bitcoin-whitepaper/manuscript.pdf" />
+  <link rel="alternate" type="application/pdf" href="https://git.dhimmel.com/bitcoin-whitepaper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dhimmel.github.io/bitcoin-whitepaper/v/b905f582a6d6a7f39f025102f62f60b4925aed0e/" />
+  <link rel="alternate" type="text/html" href="https://git.dhimmel.com/bitcoin-whitepaper/v/613f2bf50275f990caf2c1d8ec3d49c91654051c/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dhimmel.github.io/bitcoin-whitepaper/v/b905f582a6d6a7f39f025102f62f60b4925aed0e/" />
+  <meta name="manubot_html_url_versioned" content="https://git.dhimmel.com/bitcoin-whitepaper/v/613f2bf50275f990caf2c1d8ec3d49c91654051c/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dhimmel.github.io/bitcoin-whitepaper/v/b905f582a6d6a7f39f025102f62f60b4925aed0e/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://git.dhimmel.com/bitcoin-whitepaper/v/613f2bf50275f990caf2c1d8ec3d49c91654051c/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
   <meta property="twitter:card" content="summary_large_image" />
 
-  <meta property="og:image" content="https://github.com/dhimmel/bitcoin-whitepaper/raw/b905f582a6d6a7f39f025102f62f60b4925aed0e/build/assets/thumbnail.png" />
+  <meta property="og:image" content="https://github.com/dhimmel/bitcoin-whitepaper/raw/613f2bf50275f990caf2c1d8ec3d49c91654051c/build/assets/thumbnail.png" />
 
-  <meta property="twitter:image" content="https://github.com/dhimmel/bitcoin-whitepaper/raw/b905f582a6d6a7f39f025102f62f60b4925aed0e/build/assets/thumbnail.png" />
+  <meta property="twitter:image" content="https://github.com/dhimmel/bitcoin-whitepaper/raw/613f2bf50275f990caf2c1d8ec3d49c91654051c/build/assets/thumbnail.png" />
 
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
 
@@ -84,9 +84,9 @@ This whitepaper was originally published by Satoshi Nakamoto on October 31, 2008
 
 <small><em>
 This manuscript
-([permalink](https://dhimmel.github.io/bitcoin-whitepaper/v/b905f582a6d6a7f39f025102f62f60b4925aed0e/))
+([permalink](https://git.dhimmel.com/bitcoin-whitepaper/v/613f2bf50275f990caf2c1d8ec3d49c91654051c/))
 was automatically generated
-from [dhimmel/bitcoin-whitepaper@b905f58](https://github.com/dhimmel/bitcoin-whitepaper/tree/b905f582a6d6a7f39f025102f62f60b4925aed0e)
+from [dhimmel/bitcoin-whitepaper@613f2bf](https://github.com/dhimmel/bitcoin-whitepaper/tree/613f2bf50275f990caf2c1d8ec3d49c91654051c)
 on .
 </em></small>
 
