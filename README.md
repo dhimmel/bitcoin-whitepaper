@@ -15,7 +15,7 @@ Actual manuscript instances will clone this repository (see [`SETUP.md`](SETUP.m
 -->
 
 This repository uses the Manubot to recreate the [Bitcoin whitepaper](https://bitcoin.org/bitcoin.pdf).
-The source was derived from the [HTML whitepaper version](http://nakamotoinstitute.org/bitcoin/) provided by the _Satoshi Nakamoto Institute_.
+The source was derived from the [HTML whitepaper version](https://nakamotoinstitute.org/bitcoin/) provided by the _Satoshi Nakamoto Institute_.
 For more background on this project, see the Steemit post [How I used the Manubot to reproduce the Bitcoin Whitepaper](https://steemit.com/manubot/@dhimmel/how-i-used-the-manubot-to-reproduce-the-bitcoin-whitepaper) and this [StackExchange answer](https://bitcoin.stackexchange.com/a/59738/60260 "Answer to Where can I find the Bitcoin white paper in plain text markdown format?").
 This project began as a live demo in a 2017-09-19 [Greene Lab](http://www.greenelab.com/) Meeting describing the Manubot!
 
