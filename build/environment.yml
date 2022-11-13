@@ -2,33 +2,36 @@ name: manubot
 channels:
   - conda-forge
 dependencies:
-  - cairo=1.14.12
-  - cairocffi=0.8.0
-  - cffi=1.12.3
-  - ghp-import=0.5.5
-  - jinja2=2.10.3
-  - jsonschema=3.1.1
-  - pandas=0.25.2
-  - pandoc=2.7.3
-  - pango=1.40.14
-  - pip=19.3
-  - psutil=5.6.3
-  - python=3.7.3
-  - pyyaml=5.1
-  - requests=2.22.0
-  - watchdog=0.9.0
+  - cairo=1.16.0
+  - cairocffi=1.2.0
+  - ghp-import=2.0.2
+  - jinja2=3.0.3
+  - jsonschema=4.2.1
+  - pandoc=2.17.0.1
+  - pango=1.48.10
+  - pip=21.3.1
+  - python=3.10.0
+  - requests-cache=0.8.1
+  - requests=2.26.0
+  - tomli=2.0.1
+  - watchdog==2.1.6
+  - weasyprint=53.4
+  - yamllint=1.26.3
   - pip:
+    - cffi==1.15.0
     - errorhandler==2.0.1
-    - git+https://github.com/manubot/manubot@2ffcec1183bdaf7c49a81490b9c31d05e977b351
-    - jsonref==0.2
+    - git+https://github.com/manubot/manubot@35178e6e561ae9778ab26123654b567526236c32
+    - isbnlib==3.10.9
     - opentimestamps-client==0.7.0
     - opentimestamps==0.4.1
-    - pandoc-eqnos==2.1.1
-    - pandoc-fignos==2.2.0
-    - pandoc-tablenos==2.1.1
-    - pandoc-xnos==2.2.0
+    - pandoc-eqnos==2.5.0
+    - pandoc-fignos==2.4.0
+    - pandoc-tablenos==2.3.0
+    - pandoc-xnos==2.5.0
+    - pandocfilters==1.5.0
+    - panflute==2.1.0
+    - psutil==5.8.0
     - pybase62==0.4.3
     - pysha3==1.0.2
     - python-bitcoinlib==0.10.2
-    - requests-cache==0.5.2
-    - weasyprint==0.42.3
+    - pyyaml==5.4.1
