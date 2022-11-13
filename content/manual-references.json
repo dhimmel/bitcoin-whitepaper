@@ -1,8 +1,7 @@
 [
 {
-  "id": "url:https://github.com/manubot/rootstock",
+  "id": "http://www.weidai.com/bmoney.txt",
   "type": "webpage",
-  "standard_citation": "url:http://www.weidai.com/bmoney.txt",
   "URL": "http://www.weidai.com/bmoney.txt",
   "title": "b-money",
   "issued": {
@@ -22,8 +21,8 @@
   ]
 },
 {
+  "id": "https://archive.org/details/AnIntroductionToProbabilityTheoryAndItsApplicationsVolume1",
   "type": "book",
-  "standard_citation": "url:https://archive.org/details/AnIntroductionToProbabilityTheoryAndItsApplicationsVolume1",
   "URL": "https://archive.org/details/AnIntroductionToProbabilityTheoryAndItsApplicationsVolume1",
   "title": "An Introduction to Probability Theory and its Applications",
   "issued": {
@@ -44,8 +43,8 @@
    "publisher": "John Wiley & Sons"
 },
 {
+  "id": "http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.15.8",
   "type": "report",
-  "standard_citation": "url:http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.15.8",
   "URL": "http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.15.8",
   "title": "Hashcash - A Denial of Service Counter-Measure",
   "issued": {
@@ -65,9 +64,9 @@
   ]
 },
 {
+  "id": "https://www-crypto.elen.ucl.ac.be/crypto/publications/year/1999",
   "type": "report",
-  "standard_citation": "url:http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.13.6228",
-  "URL": "http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.13.6228",
+  "URL": "https://www-crypto.elen.ucl.ac.be/crypto/publications/year/1999",
   "title": "Design of a secure timestamping service with minimal trust requirements",
   "container-title": "20th Symposium on Information Theory in the Benelux",
   "issued": {

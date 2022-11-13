@@ -1,12 +1,13 @@
 ---
 title: "Bitcoin: A Peer-to-Peer Electronic Cash System"
+date: 2008-10-31
 keywords:
   - bitcoin
   - whitepaper
   - cryptocurrency
 html_url: https://git.dhimmel.com/bitcoin-whitepaper/
 author_info:
-  -
-    name: Satoshi Nakamoto
+  - name: Satoshi Nakamoto
     initials: SN
     email: satoshin@gmx.com
+thumbnail: content/images/transactions.svg
