@@ -1,7 +1,7 @@
 # Output directory containing the formatted manuscript
 
 The [`gh-pages`](https://github.com/dhimmel/bitcoin-whitepaper/tree/gh-pages) branch hosts the contents of this directory at <https://dhimmel.github.io/bitcoin-whitepaper/>.
-The permalink for this webpage version is <https://dhimmel.github.io/bitcoin-whitepaper/v/0d23215ab8c5f18c96a7884c5125d3ae3fe1febf/>.
+The permalink for this webpage version is <https://dhimmel.github.io/bitcoin-whitepaper/v/95fac49076963fc43449549e6c218b7a62866761/>.
 To redirect to the permalink for the latest manuscript version at anytime, use the link <https://dhimmel.github.io/bitcoin-whitepaper/v/freeze/>.
 
 ## Files
@@ -35,4 +35,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`0d23215ab8c5f18c96a7884c5125d3ae3fe1febf`](https://github.com/dhimmel/bitcoin-whitepaper/commit/0d23215ab8c5f18c96a7884c5125d3ae3fe1febf).
+[`95fac49076963fc43449549e6c218b7a62866761`](https://github.com/dhimmel/bitcoin-whitepaper/commit/95fac49076963fc43449549e6c218b7a62866761).
