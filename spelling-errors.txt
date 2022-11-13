@@ -1,6 +1,6 @@
 breakeven
 cryptographic
-hashcash
+Hashcash
 incrementing
 IPs
 massias
