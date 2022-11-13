@@ -9,4 +9,4 @@ Nakamoto
 Satoshi
 SHA
 vanishingly
-whitepaper
+Whitepaper
