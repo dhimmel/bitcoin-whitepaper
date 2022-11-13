@@ -1,77 +1,56 @@
 ---
-author-meta:
-- Satoshi Nakamoto
-date-meta: '2019-11-20'
-header-includes: '<!--
-
-  Manubot generated metadata rendered from header-includes-template.html.
-
-  Suggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html
-
-  -->
-
-  <meta name="dc.format" content="text/html" />
-
-  <meta name="dc.title" content="Bitcoin: A Peer-to-Peer Electronic Cash System" />
-
-  <meta name="citation_title" content="Bitcoin: A Peer-to-Peer Electronic Cash System" />
-
-  <meta property="og:title" content="Bitcoin: A Peer-to-Peer Electronic Cash System" />
-
-  <meta property="twitter:title" content="Bitcoin: A Peer-to-Peer Electronic Cash System" />
-
-  <meta name="dc.date" content="2019-11-20" />
-
-  <meta name="citation_publication_date" content="2019-11-20" />
-
-  <meta name="dc.relation.ispartof" content="Manubot" />
-
-  <meta name="dc.publisher" content="Manubot" />
-
-  <meta name="citation_journal_title" content="Manubot" />
-
-  <meta name="citation_technical_report_institution" content="Manubot" />
-
-  <meta name="citation_author" content="Satoshi Nakamoto" />
-
-  <link rel="canonical" href="https://git.dhimmel.com/bitcoin-whitepaper/" />
-
-  <meta property="og:url" content="https://git.dhimmel.com/bitcoin-whitepaper/" />
-
-  <meta property="twitter:url" content="https://git.dhimmel.com/bitcoin-whitepaper/" />
-
-  <meta name="citation_fulltext_html_url" content="https://git.dhimmel.com/bitcoin-whitepaper/" />
-
-  <meta name="citation_pdf_url" content="https://git.dhimmel.com/bitcoin-whitepaper/manuscript.pdf" />
-
-  <link rel="alternate" type="application/pdf" href="https://git.dhimmel.com/bitcoin-whitepaper/manuscript.pdf" />
-
-  <link rel="alternate" type="text/html" href="https://git.dhimmel.com/bitcoin-whitepaper/v/a5f36b332cb6a5fa9e701886f376ac1ac2946d07/" />
-
-  <meta name="manubot_html_url_versioned" content="https://git.dhimmel.com/bitcoin-whitepaper/v/a5f36b332cb6a5fa9e701886f376ac1ac2946d07/" />
-
-  <meta name="manubot_pdf_url_versioned" content="https://git.dhimmel.com/bitcoin-whitepaper/v/a5f36b332cb6a5fa9e701886f376ac1ac2946d07/manuscript.pdf" />
-
-  <meta property="og:type" content="article" />
-
-  <meta property="twitter:card" content="summary_large_image" />
-
-  <meta property="og:image" content="https://github.com/dhimmel/bitcoin-whitepaper/raw/a5f36b332cb6a5fa9e701886f376ac1ac2946d07/build/assets/thumbnail.png" />
-
-  <meta property="twitter:image" content="https://github.com/dhimmel/bitcoin-whitepaper/raw/a5f36b332cb6a5fa9e701886f376ac1ac2946d07/build/assets/thumbnail.png" />
-
-  <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
-
-  <link rel="mask-icon" href="https://manubot.org/safari-pinned-tab.svg" color="#ad1457" />
-
-  <meta name="theme-color" content="#ad1457" />
-
-  <!-- end Manubot generated metadata -->'
+title: 'Bitcoin: A Peer-to-Peer Electronic Cash System'
 keywords:
 - bitcoin
 - whitepaper
 - cryptocurrency
-title: 'Bitcoin: A Peer-to-Peer Electronic Cash System'
+date-meta: '2022-11-13'
+author-meta:
+- Satoshi Nakamoto
+header-includes: |-
+  <!--
+  Manubot generated metadata rendered from header-includes-template.html.
+  Suggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html
+  -->
+  <meta name="dc.format" content="text/html" />
+  <meta property="og:type" content="article" />
+  <meta name="dc.title" content="Bitcoin: A Peer-to-Peer Electronic Cash System" />
+  <meta name="citation_title" content="Bitcoin: A Peer-to-Peer Electronic Cash System" />
+  <meta property="og:title" content="Bitcoin: A Peer-to-Peer Electronic Cash System" />
+  <meta property="twitter:title" content="Bitcoin: A Peer-to-Peer Electronic Cash System" />
+  <meta name="dc.date" content="2022-11-13" />
+  <meta name="citation_publication_date" content="2022-11-13" />
+  <meta property="article:published_time" content="2022-11-13" />
+  <meta name="dc.modified" content="2022-11-13T15:47:06+00:00" />
+  <meta property="article:modified_time" content="2022-11-13T15:47:06+00:00" />
+  <meta name="dc.relation.ispartof" content="Manubot" />
+  <meta name="dc.publisher" content="Manubot" />
+  <meta name="citation_journal_title" content="Manubot" />
+  <meta name="citation_technical_report_institution" content="Manubot" />
+  <meta name="citation_author" content="Satoshi Nakamoto" />
+  <link rel="canonical" href="https://git.dhimmel.com/bitcoin-whitepaper/" />
+  <meta property="og:url" content="https://git.dhimmel.com/bitcoin-whitepaper/" />
+  <meta property="twitter:url" content="https://git.dhimmel.com/bitcoin-whitepaper/" />
+  <meta name="citation_fulltext_html_url" content="https://git.dhimmel.com/bitcoin-whitepaper/" />
+  <meta name="citation_pdf_url" content="https://git.dhimmel.com/bitcoin-whitepaper/manuscript.pdf" />
+  <link rel="alternate" type="application/pdf" href="https://git.dhimmel.com/bitcoin-whitepaper/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://git.dhimmel.com/bitcoin-whitepaper/v/f56cc80789aba944e5892c8abd158ba99642304b/" />
+  <meta name="manubot_html_url_versioned" content="https://git.dhimmel.com/bitcoin-whitepaper/v/f56cc80789aba944e5892c8abd158ba99642304b/" />
+  <meta name="manubot_pdf_url_versioned" content="https://git.dhimmel.com/bitcoin-whitepaper/v/f56cc80789aba944e5892c8abd158ba99642304b/manuscript.pdf" />
+  <meta property="og:type" content="article" />
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="og:image" content="https://github.com/dhimmel/bitcoin-whitepaper/raw/f56cc80789aba944e5892c8abd158ba99642304b/build/assets/thumbnail.png" />
+  <meta property="twitter:image" content="https://github.com/dhimmel/bitcoin-whitepaper/raw/f56cc80789aba944e5892c8abd158ba99642304b/build/assets/thumbnail.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
+  <link rel="mask-icon" href="https://manubot.org/safari-pinned-tab.svg" color="#ad1457" />
+  <meta name="theme-color" content="#ad1457" />
+  <!-- end Manubot generated metadata -->
+bibliography:
+- content/manual-references.json
+manubot-output-bibliography: output/references.json
+manubot-output-citekeys: output/citations.tsv
+manubot-requests-cache-path: ci/cache/requests-cache
+manubot-clear-requests-cache: false
 ...
 
 
@@ -84,20 +63,28 @@ This whitepaper was originally published by Satoshi Nakamoto on October 31, 2008
 
 <small><em>
 This manuscript
-([permalink](https://git.dhimmel.com/bitcoin-whitepaper/v/a5f36b332cb6a5fa9e701886f376ac1ac2946d07/))
+([permalink](https://git.dhimmel.com/bitcoin-whitepaper/v/f56cc80789aba944e5892c8abd158ba99642304b/))
 was automatically generated
-from [dhimmel/bitcoin-whitepaper@a5f36b3](https://github.com/dhimmel/bitcoin-whitepaper/tree/a5f36b332cb6a5fa9e701886f376ac1ac2946d07)
-on November 20, 2019.
+from [dhimmel/bitcoin-whitepaper@f56cc80](https://github.com/dhimmel/bitcoin-whitepaper/tree/f56cc80789aba944e5892c8abd158ba99642304b)
+on November 13, 2022.
 </em></small>
+
+
 
 ## Authors
 
 
 
-+ **Satoshi Nakamoto**<br><br>
++ **Satoshi Nakamoto**
+  <br>
   <small>
   </small>
 
+
+::: {#correspondence}
+✉ — Correspondence possible via [GitHub Issues](https://github.com/dhimmel/bitcoin-whitepaper/issues)
+
+:::
 
 
 ## Abstract {.page_break_before}
@@ -145,13 +132,13 @@ We need a way for the payee to know that the previous owners did not sign any ea
 For our purposes, the earliest transaction is the one that counts, so we don't care about later attempts to double-spend.
 The only way to confirm the absence of a transaction is to be aware of all transactions.
 In the mint based model, the mint was aware of all transactions and decided which arrived first.
-To accomplish this without a trusted party, transactions must be publicly announced [@PBY14TLl], and we need a system for participants to agree on a single history of the order in which they were received.
+To accomplish this without a trusted party, transactions must be publicly announced [@url:http://www.weidai.com/bmoney.txt], and we need a system for participants to agree on a single history of the order in which they were received.
 The payee needs proof that at the time of each transaction, the majority of nodes agreed it was the first received.
 
 ## 3. Timestamp Server
 
 The solution we propose begins with a timestamp server.
-A timestamp server works by taking a hash of a block of items to be timestamped and widely publishing the hash, such as in a newspaper or Usenet post [@17Cp5JvP8; @zk5okH1t; @1Gw6LBfXO; @10yGvxo1W].
+A timestamp server works by taking a hash of a block of items to be timestamped and widely publishing the hash, such as in a newspaper or Usenet post [@massias; @doi:10.1007/bf00196791; @doi:10.1007/978-1-4613-9323-8_24; @doi:10.1145/266420.266430].
 The timestamp proves that the data must have existed at the time, obviously, in order to get into the hash.
 Each timestamp includes the previous timestamp in its hash, forming a chain, with each additional timestamp reinforcing the ones before it.
 
@@ -159,7 +146,7 @@ Each timestamp includes the previous timestamp in its hash, forming a chain, wit
 
 ## 4. Proof-of-Work
 
-To implement a distributed timestamp server on a peer-to-peer basis, we will need to use a proof-of-work system similar to Adam Back's Hashcash [@zILHkANE], rather than newspaper or Usenet posts.
+To implement a distributed timestamp server on a peer-to-peer basis, we will need to use a proof-of-work system similar to Adam Back's Hashcash [@hashcash], rather than newspaper or Usenet posts.
 The proof-of-work involves scanning for a value that when hashed, such as with SHA-256, the hash begins with a number of zero bits.
 The average work required is exponential in the number of zero bits required and can be verified by executing a single hash.
 
@@ -219,7 +206,7 @@ He ought to find it more profitable to play by the rules, such rules that favour
 ## 7. Reclaiming Disk Space
 
 Once the latest transaction in a coin is buried under enough blocks, the spent transactions before it can be discarded to save disk space.
-To facilitate this without breaking the block's hash, transactions are hashed in a Merkle Tree [@1E30OhQ6H; @17Cp5JvP8; @10yGvxo1W], with only the root included in the block's hash.
+To facilitate this without breaking the block's hash, transactions are hashed in a Merkle Tree [@doi:10.1109/sp.1980.10006; @massias; @doi:10.1145/266420.266430], with only the root included in the block's hash.
 Old blocks can then be compacted by stubbing off branches of the tree.
 The interior hashes do not need to be stored.
 
@@ -278,7 +265,7 @@ The success event is the honest chain being extended by one block, increasing it
 
 The probability of an attacker catching up from a given deficit is analogous to a Gambler's Ruin problem.
 Suppose a gambler with unlimited credit starts at a deficit and plays potentially an infinite number of trials to try to reach breakeven.
-We can calculate the probability he ever reaches breakeven, or that an attacker ever catches up with the honest chain, as follows [@dPawqJne]:
+We can calculate the probability he ever reaches breakeven, or that an attacker ever catches up with the honest chain, as follows [@url:https://archive.org/details/AnIntroductionToProbabilityTheoryAndItsApplicationsVolume1]:
 
 $$
 \begin{eqnarray*}
@@ -406,6 +393,9 @@ They do not need to be identified, since messages are not routed to any particul
 Nodes can leave and rejoin the network at will, accepting the proof-of-work chain as proof of what happened while they were gone.
 They vote with their CPU power, expressing their acceptance of valid blocks by working on extending them and rejecting invalid blocks by refusing to work on them.
 Any needed rules and incentives can be enforced with this consensus mechanism.
+
+@[massias]: http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.13.6228
+@[hashcash]: http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.15.8
 
 
 ## References {.page_break_before}

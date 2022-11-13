@@ -6,14 +6,25 @@
       "whitepaper",
       "cryptocurrency"
     ],
-    "date-meta": "2019-11-20",
+    "date-meta": "2022-11-13",
     "author-meta": [
       "Satoshi Nakamoto"
     ],
-    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Bitcoin: A Peer-to-Peer Electronic Cash System\" />\n<meta name=\"citation_title\" content=\"Bitcoin: A Peer-to-Peer Electronic Cash System\" />\n<meta property=\"og:title\" content=\"Bitcoin: A Peer-to-Peer Electronic Cash System\" />\n<meta property=\"twitter:title\" content=\"Bitcoin: A Peer-to-Peer Electronic Cash System\" />\n<meta name=\"dc.date\" content=\"2019-11-20\" />\n<meta name=\"citation_publication_date\" content=\"2019-11-20\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Satoshi Nakamoto\" />\n<link rel=\"canonical\" href=\"https://git.dhimmel.com/bitcoin-whitepaper/\" />\n<meta property=\"og:url\" content=\"https://git.dhimmel.com/bitcoin-whitepaper/\" />\n<meta property=\"twitter:url\" content=\"https://git.dhimmel.com/bitcoin-whitepaper/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://git.dhimmel.com/bitcoin-whitepaper/\" />\n<meta name=\"citation_pdf_url\" content=\"https://git.dhimmel.com/bitcoin-whitepaper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://git.dhimmel.com/bitcoin-whitepaper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://git.dhimmel.com/bitcoin-whitepaper/v/a5f36b332cb6a5fa9e701886f376ac1ac2946d07/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://git.dhimmel.com/bitcoin-whitepaper/v/a5f36b332cb6a5fa9e701886f376ac1ac2946d07/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://git.dhimmel.com/bitcoin-whitepaper/v/a5f36b332cb6a5fa9e701886f376ac1ac2946d07/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<meta property=\"og:image\" content=\"https://github.com/dhimmel/bitcoin-whitepaper/raw/a5f36b332cb6a5fa9e701886f376ac1ac2946d07/build/assets/thumbnail.png\" />\n<meta property=\"twitter:image\" content=\"https://github.com/dhimmel/bitcoin-whitepaper/raw/a5f36b332cb6a5fa9e701886f376ac1ac2946d07/build/assets/thumbnail.png\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->"
+    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta name=\"dc.title\" content=\"Bitcoin: A Peer-to-Peer Electronic Cash System\" />\n<meta name=\"citation_title\" content=\"Bitcoin: A Peer-to-Peer Electronic Cash System\" />\n<meta property=\"og:title\" content=\"Bitcoin: A Peer-to-Peer Electronic Cash System\" />\n<meta property=\"twitter:title\" content=\"Bitcoin: A Peer-to-Peer Electronic Cash System\" />\n<meta name=\"dc.date\" content=\"2022-11-13\" />\n<meta name=\"citation_publication_date\" content=\"2022-11-13\" />\n<meta property=\"article:published_time\" content=\"2022-11-13\" />\n<meta name=\"dc.modified\" content=\"2022-11-13T15:47:06+00:00\" />\n<meta property=\"article:modified_time\" content=\"2022-11-13T15:47:06+00:00\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Satoshi Nakamoto\" />\n<link rel=\"canonical\" href=\"https://git.dhimmel.com/bitcoin-whitepaper/\" />\n<meta property=\"og:url\" content=\"https://git.dhimmel.com/bitcoin-whitepaper/\" />\n<meta property=\"twitter:url\" content=\"https://git.dhimmel.com/bitcoin-whitepaper/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://git.dhimmel.com/bitcoin-whitepaper/\" />\n<meta name=\"citation_pdf_url\" content=\"https://git.dhimmel.com/bitcoin-whitepaper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://git.dhimmel.com/bitcoin-whitepaper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://git.dhimmel.com/bitcoin-whitepaper/v/f56cc80789aba944e5892c8abd158ba99642304b/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://git.dhimmel.com/bitcoin-whitepaper/v/f56cc80789aba944e5892c8abd158ba99642304b/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://git.dhimmel.com/bitcoin-whitepaper/v/f56cc80789aba944e5892c8abd158ba99642304b/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<meta property=\"og:image\" content=\"https://github.com/dhimmel/bitcoin-whitepaper/raw/f56cc80789aba944e5892c8abd158ba99642304b/build/assets/thumbnail.png\" />\n<meta property=\"twitter:image\" content=\"https://github.com/dhimmel/bitcoin-whitepaper/raw/f56cc80789aba944e5892c8abd158ba99642304b/build/assets/thumbnail.png\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->",
+    "bibliography": [
+      "content/manual-references.json"
+    ],
+    "manubot-output-bibliography": "output/references.json",
+    "manubot-output-citekeys": "output/citations.tsv",
+    "manubot-requests-cache-path": "ci/cache/requests-cache",
+    "manubot-clear-requests-cache": false
   },
   "manubot": {
-    "date": "November 20, 2019",
+    "date": "2022-11-13",
+    "date_long": "November 13, 2022",
+    "generated": "2022-11-13T15:47:06+00:00",
+    "generated_date_long": "November 13, 2022",
+    "randomize_author_order": false,
     "authors": [
       {
         "name": "Satoshi Nakamoto",
@@ -22,27 +33,24 @@
       }
     ],
     "ci_source": {
-      "provider": "travis",
+      "provider": "github",
       "repo_slug": "dhimmel/bitcoin-whitepaper",
       "repo_owner": "dhimmel",
       "repo_name": "bitcoin-whitepaper",
-      "commit": "a5f36b332cb6a5fa9e701886f376ac1ac2946d07",
-      "triggering_commit": "a5f36b332cb6a5fa9e701886f376ac1ac2946d07",
-      "build_url": "https://travis-ci.org/dhimmel/bitcoin-whitepaper/builds/614632449",
-      "job_url": "https://travis-ci.org/dhimmel/bitcoin-whitepaper/jobs/614632450"
+      "commit": "f56cc80789aba944e5892c8abd158ba99642304b",
+      "triggering_commit": "f56cc80789aba944e5892c8abd158ba99642304b",
+      "build_url": "https://github.com/dhimmel/bitcoin-whitepaper/commit/f56cc80789aba944e5892c8abd158ba99642304b/checks",
+      "job_url": "https://github.com/dhimmel/bitcoin-whitepaper/actions/runs/3455901293"
     },
     "html_url": "https://git.dhimmel.com/bitcoin-whitepaper/",
     "pdf_url": "https://git.dhimmel.com/bitcoin-whitepaper/manuscript.pdf",
-    "html_url_versioned": "https://git.dhimmel.com/bitcoin-whitepaper/v/a5f36b332cb6a5fa9e701886f376ac1ac2946d07/",
-    "pdf_url_versioned": "https://git.dhimmel.com/bitcoin-whitepaper/v/a5f36b332cb6a5fa9e701886f376ac1ac2946d07/manuscript.pdf",
-    "thumbnail_url": "https://github.com/dhimmel/bitcoin-whitepaper/raw/a5f36b332cb6a5fa9e701886f376ac1ac2946d07/build/assets/thumbnail.png",
+    "html_url_versioned": "https://git.dhimmel.com/bitcoin-whitepaper/v/f56cc80789aba944e5892c8abd158ba99642304b/",
+    "pdf_url_versioned": "https://git.dhimmel.com/bitcoin-whitepaper/v/f56cc80789aba944e5892c8abd158ba99642304b/manuscript.pdf",
+    "manubot_version": "0.5.3",
+    "rootstock_commit": "d5237b3c71839bc12c1755e32eee9a5fb62ffd48",
+    "thumbnail_url": "https://github.com/dhimmel/bitcoin-whitepaper/raw/f56cc80789aba944e5892c8abd158ba99642304b/build/assets/thumbnail.png",
     "manuscript_stats": {
-      "reference_counts": {
-        "doi": 4,
-        "url": 4,
-        "total": 8
-      },
-      "word_count": 3536
+      "word_count": 3658
     }
   }
 }

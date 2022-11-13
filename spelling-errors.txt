@@ -1,0 +1,12 @@
+breakeven
+cryptographic
+Hashcash
+incrementing
+IPs
+massias
+Merkle
+Nakamoto
+Satoshi
+SHA
+vanishingly
+whitepaper
