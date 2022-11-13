@@ -5,7 +5,7 @@
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Satoshi Nakamoto" />
-  <meta name="dcterms.date" content="2022-11-13" />
+  <meta name="dcterms.date" content="2008-10-31" />
   <meta name="keywords" content="bitcoin, whitepaper, cryptocurrency" />
   <title>Bitcoin: A Peer-to-Peer Electronic Cash System</title>
   <style>
@@ -108,11 +108,11 @@
   <meta name="citation_title" content="Bitcoin: A Peer-to-Peer Electronic Cash System" />
   <meta property="og:title" content="Bitcoin: A Peer-to-Peer Electronic Cash System" />
   <meta property="twitter:title" content="Bitcoin: A Peer-to-Peer Electronic Cash System" />
-  <meta name="dc.date" content="2022-11-13" />
-  <meta name="citation_publication_date" content="2022-11-13" />
-  <meta property="article:published_time" content="2022-11-13" />
-  <meta name="dc.modified" content="2022-11-13T15:47:06+00:00" />
-  <meta property="article:modified_time" content="2022-11-13T15:47:06+00:00" />
+  <meta name="dc.date" content="2008-10-31" />
+  <meta name="citation_publication_date" content="2008-10-31" />
+  <meta property="article:published_time" content="2008-10-31" />
+  <meta name="dc.modified" content="2022-11-13T16:04:11+00:00" />
+  <meta property="article:modified_time" content="2022-11-13T16:04:11+00:00" />
   <meta name="dc.relation.ispartof" content="Manubot" />
   <meta name="dc.publisher" content="Manubot" />
   <meta name="citation_journal_title" content="Manubot" />
@@ -124,13 +124,13 @@
   <meta name="citation_fulltext_html_url" content="https://git.dhimmel.com/bitcoin-whitepaper/" />
   <meta name="citation_pdf_url" content="https://git.dhimmel.com/bitcoin-whitepaper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://git.dhimmel.com/bitcoin-whitepaper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://git.dhimmel.com/bitcoin-whitepaper/v/f56cc80789aba944e5892c8abd158ba99642304b/" />
-  <meta name="manubot_html_url_versioned" content="https://git.dhimmel.com/bitcoin-whitepaper/v/f56cc80789aba944e5892c8abd158ba99642304b/" />
-  <meta name="manubot_pdf_url_versioned" content="https://git.dhimmel.com/bitcoin-whitepaper/v/f56cc80789aba944e5892c8abd158ba99642304b/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://git.dhimmel.com/bitcoin-whitepaper/v/0d23215ab8c5f18c96a7884c5125d3ae3fe1febf/" />
+  <meta name="manubot_html_url_versioned" content="https://git.dhimmel.com/bitcoin-whitepaper/v/0d23215ab8c5f18c96a7884c5125d3ae3fe1febf/" />
+  <meta name="manubot_pdf_url_versioned" content="https://git.dhimmel.com/bitcoin-whitepaper/v/0d23215ab8c5f18c96a7884c5125d3ae3fe1febf/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
-  <meta property="og:image" content="https://github.com/dhimmel/bitcoin-whitepaper/raw/f56cc80789aba944e5892c8abd158ba99642304b/build/assets/thumbnail.png" />
-  <meta property="twitter:image" content="https://github.com/dhimmel/bitcoin-whitepaper/raw/f56cc80789aba944e5892c8abd158ba99642304b/build/assets/thumbnail.png" />
+  <meta property="og:image" content="https://github.com/dhimmel/bitcoin-whitepaper/raw/0d23215ab8c5f18c96a7884c5125d3ae3fe1febf/content/images/transactions.svg" />
+  <meta property="twitter:image" content="https://github.com/dhimmel/bitcoin-whitepaper/raw/0d23215ab8c5f18c96a7884c5125d3ae3fe1febf/content/images/transactions.svg" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
   <link rel="mask-icon" href="https://manubot.org/safari-pinned-tab.svg" color="#ad1457" />
   <meta name="theme-color" content="#ad1457" />
@@ -147,11 +147,12 @@
 This whitepaper was originally published by Satoshi Nakamoto on October 31, 2008.</p>
 <p><small><em>
 This manuscript
-(<a href="https://git.dhimmel.com/bitcoin-whitepaper/v/f56cc80789aba944e5892c8abd158ba99642304b/">permalink</a>)
+(<a href="https://git.dhimmel.com/bitcoin-whitepaper/v/0d23215ab8c5f18c96a7884c5125d3ae3fe1febf/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/dhimmel/bitcoin-whitepaper/tree/f56cc80789aba944e5892c8abd158ba99642304b">dhimmel/bitcoin-whitepaper@f56cc80</a>
+from <a href="https://github.com/dhimmel/bitcoin-whitepaper/tree/0d23215ab8c5f18c96a7884c5125d3ae3fe1febf">dhimmel/bitcoin-whitepaper@0d23215</a>
 on November 13, 2022.
 </em></small></p>
+<p>Published: October 31, 2008</p>
 <h2 id="authors">Authors</h2>
 <ul>
 <li><strong>Satoshi Nakamoto</strong>
@@ -411,8 +412,8 @@ They do not need to be identified, since messages are not routed to any particul
 Nodes can leave and rejoin the network at will, accepting the proof-of-work chain as proof of what happened while they were gone.
 They vote with their CPU power, expressing their acceptance of valid blocks by working on extending them and rejecting invalid blocks by refusing to work on them.
 Any needed rules and incentives can be enforced with this consensus mechanism.</p>
-<p>@[massias]: http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.13.6228
-@[hashcash]: http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.15.8</p>
+<p>@[massias]: https://www-crypto.elen.ucl.ac.be/crypto/publications/year/1999
+@[hashcash]: wikidata:Q110828738</p>
 <h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" class="references csl-bib-body" role="doc-bibliography">

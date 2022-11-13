@@ -4,7 +4,7 @@ keywords:
 - bitcoin
 - whitepaper
 - cryptocurrency
-date-meta: '2022-11-13'
+date-meta: '2008-10-31'
 author-meta:
 - Satoshi Nakamoto
 header-includes: |-
@@ -18,11 +18,11 @@ header-includes: |-
   <meta name="citation_title" content="Bitcoin: A Peer-to-Peer Electronic Cash System" />
   <meta property="og:title" content="Bitcoin: A Peer-to-Peer Electronic Cash System" />
   <meta property="twitter:title" content="Bitcoin: A Peer-to-Peer Electronic Cash System" />
-  <meta name="dc.date" content="2022-11-13" />
-  <meta name="citation_publication_date" content="2022-11-13" />
-  <meta property="article:published_time" content="2022-11-13" />
-  <meta name="dc.modified" content="2022-11-13T15:47:06+00:00" />
-  <meta property="article:modified_time" content="2022-11-13T15:47:06+00:00" />
+  <meta name="dc.date" content="2008-10-31" />
+  <meta name="citation_publication_date" content="2008-10-31" />
+  <meta property="article:published_time" content="2008-10-31" />
+  <meta name="dc.modified" content="2022-11-13T16:04:11+00:00" />
+  <meta property="article:modified_time" content="2022-11-13T16:04:11+00:00" />
   <meta name="dc.relation.ispartof" content="Manubot" />
   <meta name="dc.publisher" content="Manubot" />
   <meta name="citation_journal_title" content="Manubot" />
@@ -34,13 +34,13 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://git.dhimmel.com/bitcoin-whitepaper/" />
   <meta name="citation_pdf_url" content="https://git.dhimmel.com/bitcoin-whitepaper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://git.dhimmel.com/bitcoin-whitepaper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://git.dhimmel.com/bitcoin-whitepaper/v/f56cc80789aba944e5892c8abd158ba99642304b/" />
-  <meta name="manubot_html_url_versioned" content="https://git.dhimmel.com/bitcoin-whitepaper/v/f56cc80789aba944e5892c8abd158ba99642304b/" />
-  <meta name="manubot_pdf_url_versioned" content="https://git.dhimmel.com/bitcoin-whitepaper/v/f56cc80789aba944e5892c8abd158ba99642304b/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://git.dhimmel.com/bitcoin-whitepaper/v/0d23215ab8c5f18c96a7884c5125d3ae3fe1febf/" />
+  <meta name="manubot_html_url_versioned" content="https://git.dhimmel.com/bitcoin-whitepaper/v/0d23215ab8c5f18c96a7884c5125d3ae3fe1febf/" />
+  <meta name="manubot_pdf_url_versioned" content="https://git.dhimmel.com/bitcoin-whitepaper/v/0d23215ab8c5f18c96a7884c5125d3ae3fe1febf/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
-  <meta property="og:image" content="https://github.com/dhimmel/bitcoin-whitepaper/raw/f56cc80789aba944e5892c8abd158ba99642304b/build/assets/thumbnail.png" />
-  <meta property="twitter:image" content="https://github.com/dhimmel/bitcoin-whitepaper/raw/f56cc80789aba944e5892c8abd158ba99642304b/build/assets/thumbnail.png" />
+  <meta property="og:image" content="https://github.com/dhimmel/bitcoin-whitepaper/raw/0d23215ab8c5f18c96a7884c5125d3ae3fe1febf/content/images/transactions.svg" />
+  <meta property="twitter:image" content="https://github.com/dhimmel/bitcoin-whitepaper/raw/0d23215ab8c5f18c96a7884c5125d3ae3fe1febf/content/images/transactions.svg" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
   <link rel="mask-icon" href="https://manubot.org/safari-pinned-tab.svg" color="#ad1457" />
   <meta name="theme-color" content="#ad1457" />
@@ -63,12 +63,13 @@ This whitepaper was originally published by Satoshi Nakamoto on October 31, 2008
 
 <small><em>
 This manuscript
-([permalink](https://git.dhimmel.com/bitcoin-whitepaper/v/f56cc80789aba944e5892c8abd158ba99642304b/))
+([permalink](https://git.dhimmel.com/bitcoin-whitepaper/v/0d23215ab8c5f18c96a7884c5125d3ae3fe1febf/))
 was automatically generated
-from [dhimmel/bitcoin-whitepaper@f56cc80](https://github.com/dhimmel/bitcoin-whitepaper/tree/f56cc80789aba944e5892c8abd158ba99642304b)
+from [dhimmel/bitcoin-whitepaper@0d23215](https://github.com/dhimmel/bitcoin-whitepaper/tree/0d23215ab8c5f18c96a7884c5125d3ae3fe1febf)
 on November 13, 2022.
 </em></small>
 
+Published: October 31, 2008
 
 
 ## Authors
@@ -132,7 +133,7 @@ We need a way for the payee to know that the previous owners did not sign any ea
 For our purposes, the earliest transaction is the one that counts, so we don't care about later attempts to double-spend.
 The only way to confirm the absence of a transaction is to be aware of all transactions.
 In the mint based model, the mint was aware of all transactions and decided which arrived first.
-To accomplish this without a trusted party, transactions must be publicly announced [@url:http://www.weidai.com/bmoney.txt], and we need a system for participants to agree on a single history of the order in which they were received.
+To accomplish this without a trusted party, transactions must be publicly announced [@http://www.weidai.com/bmoney.txt], and we need a system for participants to agree on a single history of the order in which they were received.
 The payee needs proof that at the time of each transaction, the majority of nodes agreed it was the first received.
 
 ## 3. Timestamp Server
@@ -265,7 +266,7 @@ The success event is the honest chain being extended by one block, increasing it
 
 The probability of an attacker catching up from a given deficit is analogous to a Gambler's Ruin problem.
 Suppose a gambler with unlimited credit starts at a deficit and plays potentially an infinite number of trials to try to reach breakeven.
-We can calculate the probability he ever reaches breakeven, or that an attacker ever catches up with the honest chain, as follows [@url:https://archive.org/details/AnIntroductionToProbabilityTheoryAndItsApplicationsVolume1]:
+We can calculate the probability he ever reaches breakeven, or that an attacker ever catches up with the honest chain, as follows [@https://archive.org/details/AnIntroductionToProbabilityTheoryAndItsApplicationsVolume1]:
 
 $$
 \begin{eqnarray*}
@@ -394,8 +395,8 @@ Nodes can leave and rejoin the network at will, accepting the proof-of-work chai
 They vote with their CPU power, expressing their acceptance of valid blocks by working on extending them and rejecting invalid blocks by refusing to work on them.
 Any needed rules and incentives can be enforced with this consensus mechanism.
 
-@[massias]: http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.13.6228
-@[hashcash]: http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.15.8
+@[massias]: https://www-crypto.elen.ucl.ac.be/crypto/publications/year/1999
+@[hashcash]: wikidata:Q110828738
 
 
 ## References {.page_break_before}

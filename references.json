@@ -141,9 +141,10 @@
         "family": "Wei"
       }
     ],
-    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.json\noriginal_id: url:https://github.com/manubot/rootstock\nstandard_id: url:http://www.weidai.com/bmoney.txt"
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.json\noriginal_id: http://www.weidai.com/bmoney.txt\noriginal_standard_id: http://www.weidai.com/bmoney.txt\nstandard_id: url:http://www.weidai.com/bmoney.txt"
   },
   {
+    "id": "dPawqJne",
     "type": "book",
     "URL": "https://archive.org/details/AnIntroductionToProbabilityTheoryAndItsApplicationsVolume1",
     "title": "An Introduction to Probability Theory and its Applications",
@@ -163,7 +164,6 @@
     "volume": "1",
     "edition": "2",
     "publisher": "John Wiley & Sons",
-    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.json\nstandard_id: url:https://archive.org/details/AnIntroductionToProbabilityTheoryAndItsApplicationsVolume1",
-    "id": "dPawqJne"
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.json\noriginal_id: https://archive.org/details/AnIntroductionToProbabilityTheoryAndItsApplicationsVolume1\noriginal_standard_id: https://archive.org/details/AnIntroductionToProbabilityTheoryAndItsApplicationsVolume1\nstandard_id: url:https://archive.org/details/AnIntroductionToProbabilityTheoryAndItsApplicationsVolume1"
   }
 ]
